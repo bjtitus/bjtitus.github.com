@@ -6,3 +6,12 @@ title: BJTITUS Github Page
 <div style="font-style:Verdana;font-size:40pt;width: 400px;margin:auto">This is my PAGE!</div>
 <div style="font-style:Helvetica;font-size:23pt;width: 250px;margin:auto;color:#999">I am Brandon Titus</div>
 
+<div id="notes">
+  <h1>Notes</h1>
+  <ul class="posts">
+    {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+
