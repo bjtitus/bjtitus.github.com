@@ -40,6 +40,12 @@ a {
   &:active { text-decoration: underline; }
 }
 
+header {
+	font-size: 14px;
+	font-color: #68838B;
+	font-weight: bold;
+}
+
 article {
   border-bottom: 1px dashed #DDD;
 }
