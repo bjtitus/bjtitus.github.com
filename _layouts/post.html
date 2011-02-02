@@ -1,0 +1,29 @@
+---
+layout: default
+---
+{{ ## The main post body ##}}
+<article>
+	<h2>{{ page.title }}</h2>
+	<div class="date">{{ page.date | date:"%B %d, %Y" }}</div>
+	<div id="body">
+		{{ content }}
+	</div>
+</article>
+<div id="page_info">
+	{% if page.previous %} 
+	        <div class="left"><a rel="prev" href="{{site.destination}}{{ page.previous.url }}">&larr; Older</a></div>
+	{% endif %}
+	{% if page.next %} 
+	        <div class="right"><a rel="next" href="{{site.destination}}{{ page.next.url }}">Newer &rarr;</a></div>
+	{% endif %}
+</div>
+
+{{## The related posts ##}}
+<div id="related">
+  <h2><u>Related Posts</u></h2>
+  <ul class="posts">
+    {% for post in site.related_posts limit:3 %}
+      <li><span class="mini-date">{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.destination }}{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+</div>

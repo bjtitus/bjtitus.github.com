@@ -1,17 +1,22 @@
 ---
 layout: default
-title: BJTITUS Github Page
+title: Bjtitus
 ---
 
-<div style="font-style:Verdana;font-size:40pt;width: 400px;margin:auto">This is my PAGE!</div>
-<div style="font-style:Helvetica;font-size:23pt;width: 250px;margin:auto;color:#999">I am Brandon Titus</div>
-
 <div id="notes">
-  <h1>Notes</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}</a></li>
-    {% endfor %}
-  </ul>
+  {{## This is for the latest post ##}}
+  <article>
+	<h2>{{ site.posts[0].title }}</h2>&nbsp;<a href=".{{ site.posts[0].url }}">#</a>
+	<div class="date">{{ site.posts[0].date | date:"%B %d, %Y" }}</div>
+	{{ site.posts[0].content }}
+  </article>
+  {{## This is the list of all posts except the latest ##}}
+  <div id="recent">
+  	<h2><u>Recent Posts</u></h2>
+	  <ul class="posts">
+	    {% for post in site.posts limit:10 offset:1 %}
+	      <li><span class="mini-date">{{ post.date | date_to_string }}</span> &raquo; <a class="viewFullPost" href=".{{ post.url }}">{{ post.title }}</a></li>
+	    {% endfor %}
+	  </ul>
+  </div>
 </div>
-

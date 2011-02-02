@@ -1,0 +1,3 @@
+markdown: rdiscount
+pygments: true
+lsi: true # Enabled to create better "related posts" list. Will increase compile time

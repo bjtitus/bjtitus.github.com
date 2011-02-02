@@ -1,0 +1,118 @@
+$em-color: #483d8b;
+$visited-color: #483d7a;
+$border-size: 0px;
+$body-to-footer-distance: 50px;
+$default-margin: 3px;
+$default-padding: 0px;
+$footnote-size: 0.7em;
+$body-width: 35%;
+
+@mixin right-small($size) {
+  text-align: right; 
+  font-size: $size;
+  padding-top: $body-to-footer-distance;
+}
+
+@mixin centrate {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+html {
+  margin: $default-margin;
+  padding: $default-padding;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: arial, sans-serif;
+  border: $border-size solid black;
+}
+img {
+  border: $border-size;
+}
+a {
+  color: $em-color;
+  &:link { text-decoration: none; }
+  &:visited { 
+    color: $visited-color;
+    text-decoration: none; 
+  }
+  &:hover { text-decoration: underline; }  
+  &:active { text-decoration: underline; }
+}
+
+article {
+  border-bottom: 1px dashed #DDD;
+}
+
+#container {
+	width: 700px;
+	@include centrate;
+}
+
+.date, .mini-date {
+	font-family: Monaco, monospace;
+	word-spacing: 0.1em;
+	font-size:12px;
+	margin-top: 2px;
+	margin-bottom: 5px;
+}
+
+.date {
+	color:#666;
+}
+
+.mini-date {
+	color: #999;
+}
+
+article {
+	font-family: 'Nobile', arial, serif;
+	font-size: 14px;
+	padding:5px;
+}
+
+#page_info {
+	font-family: arial, serif;
+	font-size: 12px;
+	margin:5px;
+}
+
+.posts ul {
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+
+.posts li {
+	list-style-type: none;
+	padding-left:0px;
+}
+
+#recent {
+	padding-top:5px;
+}
+
+footer {
+	width: 108px;
+	@include centrate;
+}
+
+footer img {
+	opacity: 0.75;
+}
+
+footer img:hover {
+	opacity: 1.0;
+}
+
+footer a {
+	padding:2px;
+	display: inline-block;
+}
+
+#profile_link {
+	width: 100%;
+	text-align:center;
+	color: #666;
+	font-size: 11px;
+}
