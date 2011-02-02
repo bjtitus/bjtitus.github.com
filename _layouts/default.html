@@ -31,13 +31,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
-  <link rel="shortcut icon" href="{{ site.destination }}/favicon.ico">
-  <link rel="apple-touch-icon" href="{{ site.destination }}/apple-touch-icon.png">
+  <link rel="shortcut icon" href="{{ site.path }}/favicon.ico">
+  <link rel="apple-touch-icon" href="{{ site.path }}/apple-touch-icon.png">
 
 
   <!-- CSS : implied media="all" -->
-  <link rel="stylesheet" href="{{ site.destination }}/css/style.css">
-  <link rel="stylesheet" href="{{ site.destination }}/css/default.css">
+  <link rel="stylesheet" href="{{ site.path }}/css/style.css">
+  <link rel="stylesheet" href="{{ site.path }}/css/default.css">
 
   <!-- TODO: Look into loading with WebFont loader to prevent flashing -->
   <link href='http://fonts.googleapis.com/css?family=Nobile' rel='stylesheet' type='text/css'> 
@@ -47,7 +47,7 @@
   <link rel="stylesheet" media="handheld" href="css/handheld.css?v=2">  -->
  
   <!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements & feature detects -->
-  <script src="{{ site.destination }}/js/libs/modernizr-1.6.min.js"></script>
+  <script src="{{ site.path }}/js/libs/modernizr-1.6.min.js"></script>
 
 </head>
 
@@ -55,7 +55,7 @@
 
   <div id="container">
     <header>
-		<a href="{{ site.destination }}/index.html">Header</a>
+		<a href="{{ site.path }}/index.html">Header</a>
     </header>
     
     <div id="main" role="main">
@@ -73,12 +73,12 @@
 
   <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.js"></script>
-  <script>!window.jQuery && document.write(unescape('%3Cscript src="{{ site.destination }}/js/libs/jquery-1.4.4.js"%3E%3C/script%3E'))</script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="{{ site.path }}/js/libs/jquery-1.4.4.js"%3E%3C/script%3E'))</script>
   
   
   <!-- scripts concatenated and minified via ant build script-->
-  <script src="{{ site.destination }}/js/plugins.js"></script>
-  <script src="{{ site.destination }}/js/script.js"></script>
+  <script src="{{ site.path }}/js/plugins.js"></script>
+  <script src="{{ site.path }}/js/script.js"></script>
   <!-- end concatenated and minified scripts-->
   
   
