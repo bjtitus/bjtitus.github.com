@@ -54,10 +54,10 @@ task :generate do
 end
 
 def jekyll
+  # compass already configured via config.rb in root
+  sh 'compass compile'
   # time cat to give me generation times
   # I'm just curious about how long it takes each time
   # no, time cat was not one of the thundercats
   sh 'jekyll | time cat'
-  # compass already configured via config.rb in root
-  sh 'compass compile'
 end

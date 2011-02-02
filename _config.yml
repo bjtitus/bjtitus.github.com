@@ -1,4 +1,6 @@
 markdown: rdiscount
 pygments: true
 lsi: true # Enabled to create better "related posts" list. Will increase compile time
-path: #LIVE /Users/bjtitus/Dropbox/Projects/blog/_site/
+exclude: sass/
+
+path: #LIVE /Users/bjtitus/Dropbox/Projects/blog/_site
