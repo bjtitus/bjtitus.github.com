@@ -51,8 +51,9 @@ desc 'nuke, build and compass'
 task :generate do
   sh 'rm -rf _site'
   jekyll
-  s3sync('./_site/css', 'publicfolder/blog/templates')
-  s3sync('./_site/js', 'publicfolder/blog/templates')
+  s3sync('./_site/css', 'publicfolder/blog/templates', 'gzip')
+  s3sync('./_site/js', 'publicfolder/blog/templates', 'gzip')
+  s3sync('./_site/images', 'publicfolder/blog/templates')
 end
 
 def jekyll
@@ -67,6 +68,8 @@ end
 def s3sync(*args)
   local   = args[0]
   s3_dest = args[1]
+  mime_type = args[2]
+  content_encoding = args[3]
   
   puts local
 
@@ -86,12 +89,24 @@ def s3sync(*args)
   s3_path   = s3_dest.join('/')
 
   s3_path += '/' unless s3_dest.length == 0
+  
+  extras = ''
+  
+  #if(mime_type)
+  #  extras += '--mime-type "' + mime_type + '"'
+  #end
+  
+  #if(content_encoding)
+  #   extras += ' --add-header "Content-Encoding: ' + content_encoding + '"'
+  #end
 
-  %x[ $(which s3cmd) -c #{config} sync #{local} s3://#{s3_bucket}/#{s3_path} --acl-public ]
+  %x[ s3cmd -c #{config} put --recursive #{local} s3://#{s3_bucket}/#{s3_path} --add-header "Cache-Control: max-age=315360000" --acl-public ]
 
   files = %x[ cd #{local} && find . -type f ].split("\n").map do |f| 
     s3_path + f[2,f.length]
   end
+  
+  puts files
 
   invalidate(files)
 end
