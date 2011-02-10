@@ -49,11 +49,15 @@ end
 
 desc 'nuke, build and compass'
 task :generate do
+  require 'yaml'
   sh 'rm -rf _site'
   jekyll
-  s3sync('./_site/css', 'publicfolder/blog/templates', 'gzip')
-  s3sync('./_site/js', 'publicfolder/blog/templates', 'gzip')
-  s3sync('./_site/images', 'publicfolder/blog/templates')
+  config = YAML.load(File.read("_config.yml"))
+  if(config['path'] == nil)
+    s3sync('./_site/css', 'publicfolder/blog/templates', 'gzip')
+    s3sync('./_site/js', 'publicfolder/blog/templates', 'gzip')
+    s3sync('./_site/images', 'publicfolder/blog/templates')
+  end
 end
 
 def jekyll

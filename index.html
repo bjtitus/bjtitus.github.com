@@ -5,16 +5,32 @@ title: Bjtitus
 
 <div id="notes">
   {{## This is for the latest post ##}}
+  {% for post in site.posts limit:2 %}
   <article>
-	<h2>{{ site.posts[0].title }}</h2>&nbsp;<a onClick="_kmq.push(['record', 'Viewed Full Post']);" href=".{{ site.posts[0].url }}">#</a>
-	<div class="date">{{ site.posts[0].date | date:"%B %d, %Y" }}</div>
-	{{ site.posts[0].content }}
+	<h2>{{ post.title }}</h2>&nbsp;<a onClick="_kmq.push(['record', 'Viewed Full Post']);" href=".{{ post.url }}">#</a>
+	<div class="body">
+		{{ post.content }}
+	</div>
+	<p><time datetime="{{ post.date }}">{{ post.date | date:"%B %d, %Y" }}</time></p>
   </article>
+  {% endfor %}
+	<!--<div id="cse" style="float:right;width: 300px;">Loading</div>
+	<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+	<script type="text/javascript">
+	  google.load('search', '1', {language : 'en', style : google.loader.themes.MINIMALIST});
+	  google.setOnLoadCallback(function() {
+	    var customSearchControl = new google.search.CustomSearchControl('002181372021025347602:nlxdwz6kv8q');
+	    customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+	    var options = new google.search.DrawOptions();
+	    options.setAutoComplete(true);
+	    customSearchControl.draw('cse', options);
+	  }, true);
+	</script>-->
   {{## This is the list of all posts except the latest ##}}
   <div id="recent">
-  	<h2><u>Recent Posts</u></h2>
+	<h4>Recent Posts</h4>
 	  <ul class="posts">
-	    {% for post in site.posts limit:10 offset:1 %}
+	    {% for post in site.posts limit:10 offset:2 %}
 	      <li><span class="mini-date">{{ post.date | date_to_string }}</span> &raquo; <a onClick="_kmq.push(['record', 'Viewed Full Post']);" href=".{{ post.url }}">{{ post.title }}</a></li>
 	    {% endfor %}
 	  </ul>

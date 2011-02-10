@@ -43,7 +43,9 @@
 
   <!-- TODO: Look into loading with WebFont loader to prevent flashing -->
   <link href='http://fonts.googleapis.com/css?family=Nobile' rel='stylesheet' type='text/css'> 
-  <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>  
+  <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+  <link  href="http://fonts.googleapis.com/css?family=Puritan:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css" >
+  
 
   <!-- Uncomment if you are specifically targeting less enabled mobile browsers
   <link rel="stylesheet" media="handheld" href="css/handheld.css?v=2">  -->
@@ -54,11 +56,13 @@
 </head>
 
 <body lang="en" >
+  <div id="stripe"></div>
 
   <div id="container">
-    <header>
-		<a href="{{ site.path }}/index.html">Brandon Titus</a>
-    </header>
+    <nav>
+		<a class="but" href="{{ site.path }}/index.html">Brandon Titus</a>
+		<span style="float:right;"><a class="but" href="{{ site.path }}/about.html">About</a><a class="but" href="http://photos.bjtitus.net">Photos</a><a title="RSS" href="{{ site.path }}/atom.xml"><img title="" src="{{ site.static_path }}/images/rss_32.png"></a></span>
+    </nav>
     
     <div id="main" role="main">
 	{{ content }}

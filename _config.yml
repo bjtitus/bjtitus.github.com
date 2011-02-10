@@ -3,5 +3,10 @@ pygments: true
 lsi: true # Enabled to create better "related posts" list. Will increase compile time
 exclude: sass/
 
-path: #LIVE /Users/bjtitus/Dropbox/Projects/blog/_site
+# Local
+#path: /Users/bjtitus/Dropbox/Projects/blog/_site
+#static_path: /Users/bjtitus/Dropbox/Projects/blog/_site
+
+# LIVE
+path:
 static_path: http://files.bjtitus.net/blog/templates

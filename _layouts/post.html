@@ -4,10 +4,10 @@ layout: default
 {{ ## The main post body ##}}
 <article>
 	<h2>{{ page.title }}</h2>
-	<div class="date">{{ page.date | date:"%B %d, %Y" }}</div>
-	<div id="body">
+	<div class="body">
 		{{ content }}
 	</div>
+	<p><time datetime="{{ page.date }}">{{ page.date | date:"%B %d, %Y" }}</time></p>
 </article>
 <div id="page_info">
 	{% if page.previous %} 
@@ -20,7 +20,7 @@ layout: default
 
 {{## The related posts ##}}
 <div id="related">
-  <h2><u>Related Posts</u></h2>
+  <h4>Related Posts</h4>
   <ul class="posts">
     {% for post in site.related_posts limit:3 %}
       <li><span class="mini-date">{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.path }}{{ post.url }}">{{ post.title }}</a></li>

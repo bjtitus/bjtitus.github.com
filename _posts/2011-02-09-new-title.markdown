@@ -1,0 +1,9 @@
+--- 
+layout: post
+title: "The Death of Minutes"
+date: Wed Feb 09 20:07:24 -0700 2011
+---
+
+It seems obvious to many in the younger generation that charging by the minute is old hat and no longer viable in a world of Voice Over IP, Video Chat, and texting. It seems that AT&T may be the first carrier to notice this and embrace it. According to [ZDNet](http://www.zdnet.com/blog/gadgetreviews/at-t-launches-unlimited-calling-to-any-mobile-number/22212), AT&T will be offering an [Unlimited Mobile to ANY Mobile calling plan](http://www.att.com/shop/wireless/plans/anymobile.jsp) for free to those subscribed to their unlimited texting.  
+<br/>
+This caught my attention thanks to the increasing emergence of Google Voice as a viable platform (now with [number porting](http://googlemobile.blogspot.com/2011/01/port-your-existing-mobile-number-to.html), and [free calling](http://gmailblog.blogspot.com/2010/12/free-calling-in-gmail-extended-through.html) in the U.S. & Canada through 2011).

@@ -1,0 +1,34 @@
+/*
+Syntax error: Invalid CSS after "": expected selector or at-rule, was "<style type="te..."
+        on line 1 of /Users/bjtitus/Dropbox/Projects/blog/sass/cse.scss
+
+1: /Users/bjtitus/Dropbox/Projects/blog/sass/cse.scss
+
+Backtrace:
+/Users/bjtitus/Dropbox/Projects/blog/sass/cse.scss:1
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/scss/parser.rb:838:in `expected'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/scss/parser.rb:813:in `expected'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/scss/parser.rb:27:in `parse'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/engine.rb:213:in `_to_tree'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/engine.rb:197:in `_render'
+/Library/Ruby/Gems/1.8/gems/haml-3.0.25/lib/sass/engine.rb:168:in `render'
+/Library/Ruby/Gems/1.8/gems/compass-0.10.6/lib/compass/compiler.rb:103:in `compile'
+/Library/Ruby/Gems/1.8/gems/compass-0.10.6/lib/compass/logger.rb:43:in `red'
+/Library/Ruby/Gems/1.8/gems/compass-0.10.6/lib/compass/compiler.rb:102:in `compile'
+/Library/Ruby/Gems/1.8/gems/compass-0.10.6/lib/compass/compiler.rb:93:in `compile_if_required'
+/Library/Ruby/Gems/1.8/gems/compass-0.10.6/lib/compass/compiler.rb:84:in `run'
+/Library/Ruby/Gems/1.8/gems/compass-0.10.6/lib/compass/compiler.rb:82:in `each'
+/Library/Ruby/Gems/1.8/gems/compass-0.10.6/lib/compass/compiler.rb:82:in `run'
+/Library/Ruby/Gems/1.8/gems/compass-0.10.6/lib/compass/commands/update_project.rb:33:in `perform'
+/Library/Ruby/Gems/1.8/gems/compass-0.10.6/lib/compass/commands/base.rb:18:in `execute'
+/Library/Ruby/Gems/1.8/gems/compass-0.10.6/lib/compass/commands/project_base.rb:19:in `execute'
+/Library/Ruby/Gems/1.8/gems/compass-0.10.6/lib/compass/exec/sub_command_ui.rb:38:in `perform!'
+/Library/Ruby/Gems/1.8/gems/compass-0.10.6/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Library/Ruby/Gems/1.8/gems/compass-0.10.6/bin/compass:26
+/usr/bin/compass:19:in `load'
+/usr/bin/compass:19
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"\": expected selector or at-rule, was \"<style type=\"te...\"\A         on line 1 of /Users/bjtitus/Dropbox/Projects/blog/sass/cse.scss\A \A 1: /Users/bjtitus/Dropbox/Projects/blog/sass/cse.scss"; }

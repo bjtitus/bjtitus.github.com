@@ -1,8 +1,10 @@
-$em-color: #483d8b;
-$visited-color: #483d7a;
+@import "cse";
+
+$em-color: #001a22;
+$visited-color: #034;
 $border-size: 0px;
 $body-to-footer-distance: 50px;
-$default-margin: 3px;
+$default-margin: 0px;
 $default-padding: 0px;
 $footnote-size: 0.7em;
 $body-width: 35%;
@@ -21,7 +23,7 @@ $body-width: 35%;
 html {
   margin: $default-margin;
   padding: $default-padding;
-  background-color: #ffffff;
+  background-color: #F5F5F5;
   color: #000000;
   font-family: arial, sans-serif;
   border: $border-size solid black;
@@ -40,14 +42,102 @@ a {
   &:active { text-decoration: underline; }
 }
 
-header a{
-	font-size: 14px;
-	font-color: #68838B;
-	font-weight: bold;
+#stripe {
+	position: fixed;
+	z-index: 5;
+	width: 100%;
+	top: 0;
+	height: 4px;
+	/* TODO: Use variable to make deployment easier */
+	background: url('../images/many_band_stripe.jpg') repeat-x scroll -200% 0 #089CC8;
 }
 
+nav {
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+nav .but {
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-box-shadow: 1px 1px 2px #FFF;
+	-webkit-box-shadow: 1px 1px 2px #FFF;
+	box-shadow: 1px 1px 2px #FFF;
+	font-size: 20px;
+	font-weight: bold;
+	color: #001a22;
+	margin-right: 10px;
+	font-family: 'Puritan', serif;
+	padding: 2px;
+	padding-right: 5px;
+	padding-left: 5px;
+	background-color: #eee;
+	background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eee));
+	background: -moz-linear-gradient(top,  #fff,  #eee);
+	filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff', endColorstr='#eee');
+	vertical-align:top;
+	
+	&:visited {
+		color: #001a22;
+	}
+	
+	&:hover {
+		text-decoration:none;
+		border-color: #ccc;
+		background-color: #ddd;
+		background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#fff));
+		background: -moz-linear-gradient(top,  #eee,  #fff);
+		filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#eee', endColorstr='#fff');
+		color:#034;
+	};
+	
+	&:active {
+		text-decoration:none;
+		border-color: #ccc;
+		background-color: #ddd;
+		background: -webkit-gradient(linear, left top, left bottom, from(#eee), to(#fff));
+		background: -moz-linear-gradient(top,  #eee,  #fff);
+		filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#eee', endColorstr='#fff');
+		color:#034;
+	}	
+}
+
+nav img {margin-top: -3px;}
+
 article {
+  font-family: 'Helvetica Neue', helvetica, sans-serif;
   border-bottom: 1px dashed #DDD;
+  padding: 5px;
+}
+
+article h2 {
+	text-shadow: 2px 1px 1px #FFF;
+}
+
+article a {
+	color: #666;
+	&:visited { color:#555 }
+}
+
+article .body {
+	padding:10px;
+	font-size: 15px;
+	font-family: georgia, serif;
+	line-height:1.4;
+}
+
+article .body a {
+	color:#00a2a2;
+}
+
+article .body p {
+	text-align:left;
+}
+
+article p {
+	text-align:center;
 }
 
 #container {
@@ -55,26 +145,22 @@ article {
 	@include centrate;
 }
 
-.date, .mini-date {
+time, .mini-date {
 	font-family: Monaco, monospace;
 	word-spacing: 0.1em;
-	font-size:12px;
+	font-size:13px;
 	margin-top: 2px;
 	margin-bottom: 5px;
+	text-shadow: 2px 2px 2px #FFF;
 }
 
-.date {
-	color:#666;
+time {
+	color:#999;
+	font-size:11px;
 }
 
 .mini-date {
 	color: #999;
-}
-
-article {
-	font-family: 'Nobile', arial, serif;
-	font-size: 14px;
-	padding:5px;
 }
 
 #page_info {
@@ -96,6 +182,10 @@ article {
 
 #recent {
 	padding-top:5px;
+}
+
+#related, #recent h4 {
+	text-shadow: 2px 2px 2px #FFF;
 }
 
 footer {
@@ -121,4 +211,18 @@ footer a {
 	text-align:center;
 	color: #666;
 	font-size: 11px;
+}
+
+#about {
+	padding: 10px;
+	font-family: 'Helvetica Neue', helvetica, sans-serif;
+	font-size: 14px;
+	text-align: center;
+}
+
+#about a {
+	text-decoration:underline;
+	&:hover {
+		text-decoration: none;
+	}
 }
