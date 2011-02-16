@@ -1,7 +1,7 @@
 markdown: rdiscount
 pygments: true
 lsi: true # Enabled to create better "related posts" list. Will increase compile time
-exclude: sass/
+exclude: ['sass/', 'Rakefile', 'config.rb']
 
 # Local
 #path: /Users/bjtitus/Dropbox/Projects/blog/_site
