@@ -82,6 +82,21 @@
 
   <!-- Javascript at the bottom for fast page loading -->
 
+	<!-- Start of Woopra Code -->
+	<script type="text/javascript">
+	var woo_settings = {idle_timeout:'300000', domain:'bjtitus.net'};
+	(function(){
+	var wsc = document.createElement('script');
+	wsc.src = document.location.protocol+'//static.woopra.com/js/woopra.js';
+	wsc.type = 'text/javascript';
+	wsc.async = true;
+	var ssc = document.getElementsByTagName('script')[0];
+	ssc.parentNode.insertBefore(wsc, ssc);
+	})();
+	</script>
+	<!-- End of Woopra Code -->
+
+
   <!-- Grab Google CDN's jQuery. fall back to local if necessary -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
   <script>!window.jQuery && document.write(unescape('%3Cscript src="{{ site.static_path }}/js/libs/jquery-1.4.4.js"%3E%3C/script%3E'))</script>
