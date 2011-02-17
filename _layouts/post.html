@@ -31,8 +31,8 @@ layout: default
 <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'bjtitus'; 
-    var disqus_identifier = '{{ page.id }}';
-    var disqus_url = '{{ page.url }}';
+    var disqus_identifier = '{{ page.id | replace_first:"/", "" | replace:"/","_" }}';
+    var disqus_url = 'http://bjtitus.net{{ page.url }}';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
