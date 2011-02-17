@@ -107,7 +107,8 @@ def s3sync(*args)
   %x[ s3cmd -c #{config} put --recursive #{local} s3://#{s3_bucket}/#{s3_path} --add-header "Cache-Control: max-age=315360000" --acl-public ]
 
   files = %x[ cd #{local} && find . -type f ].split("\n").map do |f| 
-    s3_path + f[2,f.length]
+    
+    s3_path + local.split('/')[2] + "/" + f[2,f.length]
   end
   
   puts files
