@@ -14,7 +14,7 @@ I think this is a very timely challenge which parallels the work that a number o
 <br/>
 **Siri**  
 
-[Siri](http://siri.com/) is a natural language processing company that has received much conversation over the last several years, especially following their purchase by Apple. Their "Virtual Personal Assistant" is astounding and it seems nearly certain that Apple [will use](http://thetechjournal.com/electronics/iphone/voice-commands-is-coming-to-ios-devices.xhtml) their technology to create a much more advanced voice recognition system in future devices.
+[Siri](http://siri.com/) is a natural language processing company that has received much attention over the last several years, especially following their purchase by Apple. Their "Virtual Personal Assistant" is astounding and it seems nearly certain that Apple [will use](http://thetechjournal.com/electronics/iphone/voice-commands-is-coming-to-ios-devices.xhtml) this technology to create a much more advanced voice recognition system in future devices.
 <br/>
 **Wolfram Alpha**  
 
