@@ -41,12 +41,9 @@ a {
 }
 
 #stripe {
-	position: fixed;
-	z-index: 5;
 	width: 100%;
 	top: 0;
 	height: 4px;
-	/* TODO: Use variable to make deployment easier */
 	background: image-url('many_band_stripe.jpg') repeat-x scroll -200% 0 #089CC8;
 }
 
