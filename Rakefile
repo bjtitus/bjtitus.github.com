@@ -57,6 +57,8 @@ task :generate do
     # need to make a symbolic link to the appropriate config file
     sh 'compass compile'
     jekyll('http://bjtitus.net')
+    sh('smusher ./_site/js')
+    sh('smusher ./_site/images')
     s3sync('./_site/css', 'publicfolder/blog/templates', 'gzip')
     s3sync('./_site/js', 'publicfolder/blog/templates', 'gzip')
     s3sync('./_site/images', 'publicfolder/blog/templates')
