@@ -1,0 +1,1 @@
+http_path = "http://files.bjtitus.net/blog/templates/"

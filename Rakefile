@@ -49,24 +49,32 @@ end
 
 desc 'nuke, build and compass'
 task :generate do
-  require 'yaml'
+  isLive = ENV['live']
   sh 'rm -rf _site'
-  jekyll
-  config = YAML.load(File.read("_config.yml"))
-  if(config['path'] == nil)
+  if(isLive == "yes")
+    puts "Pushing Live!"
+    sh 'cat parent_config.rb remote_config.rb > config.rb'
+    # need to make a symbolic link to the appropriate config file
+    sh 'compass compile'
+    jekyll('http://bjtitus.net')
     s3sync('./_site/css', 'publicfolder/blog/templates', 'gzip')
     s3sync('./_site/js', 'publicfolder/blog/templates', 'gzip')
     s3sync('./_site/images', 'publicfolder/blog/templates')
+  else
+    puts "Starting Local."
+    sh 'cat parent_config.rb local_config.rb > config.rb'
+    sh 'compass compile'
+    jekyll('/Users/bjtitus/Dropbox/Projects/blog/_site/')
   end
+  sh 'rm -rf config.rb'
 end
 
-def jekyll
-  # compass already configured via config.rb in root
-  sh 'compass compile'
+def jekyll(*args)
   # time cat to give me generation times
   # I'm just curious about how long it takes each time
   # no, time cat was not one of the thundercats
-  sh 'jekyll | time cat'
+  url = args[0]
+  sh "jekyll --url #{url} | time cat"
 end
 
 def s3sync(*args)

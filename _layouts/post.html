@@ -11,10 +11,10 @@ layout: default
 </article>
 <div id="page_info">
 	{% if page.previous %} 
-	        <div class="left"><a rel="prev" href="{{site.path}}{{ page.previous.url }}">&larr; Older</a></div>
+	        <div class="left"><a rel="prev" href="{{site.url}}{{ page.previous.url }}">&larr; Older</a></div>
 	{% endif %}
 	{% if page.next %} 
-	        <div class="right"><a rel="next" href="{{site.path}}{{ page.next.url }}">Newer &rarr;</a></div>
+	        <div class="right"><a rel="next" href="{{site.url}}{{ page.next.url }}">Newer &rarr;</a></div>
 	{% endif %}
 </div>
 
@@ -24,7 +24,7 @@ layout: default
   <h4>Related Posts</h4>
   <ul class="posts">
     {% for post in site.related_posts limit:3 %}
-      <li><span class="mini-date">{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.path }}{{ post.url }}">{{ post.title }}</a></li>
+      <li><span class="mini-date">{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
   {% endif %}
