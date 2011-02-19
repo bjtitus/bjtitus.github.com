@@ -50,18 +50,21 @@ end
 desc 'nuke, build and compass'
 task :generate do
   isLive = ENV['live']
+  refreshCache = ENV['refresh']
   sh 'rm -rf _site'
   if(isLive == "yes")
     puts "Pushing Live!"
     sh 'cat parent_config.rb remote_config.rb > config.rb'
     # need to make a symbolic link to the appropriate config file
+    sh('smusher ./js')
+    sh('smusher ./images')
     sh 'compass compile'
     jekyll('http://bjtitus.net')
-    sh('smusher ./_site/js')
-    sh('smusher ./_site/images')
-    s3sync('./_site/css', 'publicfolder/blog/templates', 'gzip')
-    s3sync('./_site/js', 'publicfolder/blog/templates', 'gzip')
-    s3sync('./_site/images', 'publicfolder/blog/templates')
+    if(refreshCache == "yes")
+      s3sync('./_site/css', 'publicfolder/blog/templates', 'gzip')
+      s3sync('./_site/js', 'publicfolder/blog/templates', 'gzip')
+      s3sync('./_site/images', 'publicfolder/blog/templates')
+    end
   else
     puts "Starting Local."
     sh 'cat parent_config.rb local_config.rb > config.rb'
