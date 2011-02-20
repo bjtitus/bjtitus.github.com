@@ -10,4 +10,4 @@ exclude: ['sass/', 'Rakefile', 'config.rb']
 #static_path: 
 
 # LIVE
-static_path: http://s.half-news.com/blog/templates
+static_path: http://s.half-news.com/blog

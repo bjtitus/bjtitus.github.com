@@ -24,13 +24,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
-  <link rel="shortcut icon" href="{{ site.static_path }}/images/favicon.ico">
-  <!--TODO: Add this <link rel="apple-touch-icon" href="{{ site.static_path }}/apple-touch-icon.png"> -->
+  <link rel="shortcut icon" href="{{ site.static_path }}/templates/images/favicon.ico">
+  <!--TODO: Add this <link rel="apple-touch-icon" href="{{ site.static_path }}/templates/apple-touch-icon.png"> -->
 
 
   <!-- CSS : implied media="all" -->
-  <link rel="stylesheet" href="{{ site.static_path }}/css/style.css">
-  <link rel="stylesheet" href="{{ site.static_path }}/css/default.css">
+  <link rel="stylesheet" href="{{ site.static_path }}/templates/css/style.css">
+  <link rel="stylesheet" href="{{ site.static_path }}/templates/css/default.css">
 
   <!-- TODO: Look into loading with WebFont loader to prevent flashing -->
   <link  href="http://fonts.googleapis.com/css?family=Puritan:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css" >
@@ -40,10 +40,10 @@
   <link rel="stylesheet" media="handheld" href="css/handheld.css?v=2">  -->
 
   <!-- Load all Javascript using LABjs -->
-  <script src="{{ site.static_path }}/js/libs/LAB.min.js"></script>
+  <script src="{{ site.static_path }}/templates/js/libs/LAB.min.js"></script>
   <script>
 	$LAB
-	.script("{{ site.static_path }}/js/libs/modernizr-1.6.min.js").wait()
+	.script("{{ site.static_path }}/templates/js/libs/modernizr-1.6.min.js").wait()
 	.script("http://mint.bjtitus.net/?js")
 	.script("http://include.reinvigorate.net/re_.js")
 	.wait(function(){
@@ -53,14 +53,14 @@
 	})
 	.script("//ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js")
 	.wait(function(){
-		!window.jQuery && document.write(unescape('%3Cscript src="{{ site.static_path }}/js/libs/jquery-1.4.4.js"%3E%3C/script%3E'))
+		!window.jQuery && document.write(unescape('%3Cscript src="{{ site.static_path }}/templates/js/libs/jquery-1.4.4.js"%3E%3C/script%3E'))
 	})
 	.script("http://www.observerapp.com/record.js")
 	.wait(function(){
 		try { Observerapp.record("4d5df98f8aa9e4490d007a78"); } catch(e) {};
 	})
-	.script("{{ site.static_path }}/js/plugins.js")
-	.script("{{ site.static_path }}/js/script.js");
+	.script("{{ site.static_path }}/templates/js/plugins.js")
+	.script("{{ site.static_path }}/templates/js/script.js");
   </script>
 
 </head>
