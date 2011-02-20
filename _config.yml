@@ -6,5 +6,8 @@ exclude: ['sass/', 'Rakefile', 'config.rb']
 # Local
 #static_path: /Users/bjtitus/Dropbox/Projects/blog/_site
 
+# Local Python server: python -m SimpleHTTPServer [port]
+#static_path: 
+
 # LIVE
 static_path: http://files.bjtitus.net/blog/templates
