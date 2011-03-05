@@ -1,3 +1,17 @@
 A Jekyll powered site/blog.
 
 I use Compass for SASS, S3Sync, and Smusher for compression.
+
+!! Useful Commands
+
+Create a new post
+	sudo rake new title="My Title"
+	
+Generate files for local
+	sudo rake generate
+
+Generate files to go live
+	sudo rake generate live
+	
+Running mini python server
+	python -m SimpleHTTPServer [port]

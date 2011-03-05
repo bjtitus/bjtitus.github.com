@@ -193,11 +193,11 @@ footer {
 	@include centrate;
 }
 
-footer img {
+footer a {
 	opacity: 0.75;
 }
 
-footer img:hover {
+footer a:hover {
 	opacity: 1.0;
 }
 
