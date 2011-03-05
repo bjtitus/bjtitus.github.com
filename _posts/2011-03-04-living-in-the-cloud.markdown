@@ -25,7 +25,7 @@ After running into yet another hard drive failure with a friend's computer recen
 [**SmugMug**](http://smugmug.com): I use SmugMug for all of my SLR photos because I like the customization and powerful features. Their SmugVault allows me to backup all of the RAW versions of my photos for archival purposes. I post many of the pictures I take with my phone to Facebook or to Twitter with [Camera+](http://campl.us/).  
 <br/>
 
-<img style="float:left;margin:5px;border:none" src="{{ site.static_path }}assets/github_octocat.png">[**Github**](http://github.com): Git is starting to become the default source control management solution. When I'm working on solo projects I like it not only for the structure it provides (branching, tagging, commit log, etc.) but also for the easy backup I can get from using hosted repositories like Github.
+<img style="float:left;margin:5px;border:none" src="{{ site.static_path }}/assets/github_octocat.png">[**Github**](http://github.com): Git is starting to become the default source control management solution. When I'm working on solo projects I like it not only for the structure it provides (branching, tagging, commit log, etc.) but also for the easy backup I can get from using hosted repositories like Github.
 <br/>
 
 [**Simplenote**](http://simplenoteapp.com/): I use Simplenote + [Notational Velocity](http://notational.net/) to keep an always update copy of various small notes. I can write quick thoughts down on my computer and be assured to find them on my iPhone, iPad, or any other device with internet access.
