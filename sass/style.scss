@@ -38,7 +38,12 @@ footer, header, hgroup, menu, nav, section {
     display:block;
 }
 
-blockquote, q { quotes:none; }
+blockquote, q { 
+	quotes:none; 
+	margin-left: 15px;
+	font-size: 0.95em;
+	font-style:italic;
+}
 
 blockquote:before, blockquote:after,
 q:before, q:after { content:''; content:none; }
@@ -168,9 +173,9 @@ h3 { font-size: 16px; text-decoration: underline;}
 .right{ width:100%; text-align:right; }
 .left{ width:100%; text-align:left; }
 
+blockquote { margin-left: 5px; font-size: 0.9em; font-style: italic; }
 
-
-
+p { margin-bottom: 5px;}
 
 
 
