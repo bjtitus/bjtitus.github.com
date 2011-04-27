@@ -45,12 +45,18 @@
   <script>
 	$LAB
 	.script("{{ site.static_path }}/templates/js/libs/modernizr-1.6.min.js").wait()
+  .script("http://static.woopra.com/js/woopra.js")
+  .wait(function(){
+    var ssc = document.getElementsByTagName('script')[0];
+    ssc.parentNode.insertBefore(wsc, ssc);
+  })
 	.script("http://mint.bjtitus.net/?js")
-	.script("http://include.reinvigorate.net/re_.js")
+	.script("http://www.google-analytics.com/ga.js")
 	.wait(function(){
-		try {
-		reinvigorate.track("4n3yb-8to6752viu");
-		} catch(err) {}
+		window.pageTracker = _gat._createTracker("UA-91939-15");
+    window.pageTracker._setDomainName("bjtitus.net");
+                  // and other API functions as necessary
+    window.pageTracker._trackPageview();
 	})
 	.script("//ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js")
 	.wait(function(){
