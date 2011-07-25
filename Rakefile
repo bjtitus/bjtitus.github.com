@@ -58,18 +58,7 @@ task :generate do
     # need to make a symbolic link to the appropriate config file
     sh('smusher ./js')
     sh('smusher ./images')
-    modified_time = 0
-    Dir.foreach('./sass/') do |item|
-      if modified_time == 0
-        modified_time = File.mtime('./sass/' + item)
-      elsif modified_time < File.mtime('./sass/' + item)
-        modified_time = File.mtime('./sass/' + item)
-      end
-    end
-    modified_time_string = modified_time.strftime("%s")
-    sh 'compass compile'
-    sh 'rm -rf ./css/*.min.css'
-    sh "juicer merge ./css/* -o ./css/combined-#{modified_time_string}.min.css --force"
+    makeCSS('./sass/')
     jekyll('http://bjtitus.net')
     if(refreshCache == "yes")
       s3sync('./_site/css', 'publicfolder/blog/templates', 'gzip')
@@ -79,21 +68,33 @@ task :generate do
   else
     puts "Starting Local."
     sh 'cat parent_config.rb local_config.rb > config.rb'
-    modified_time = 0
-    Dir.foreach('./sass/') do |item|
-      if modified_time == 0
-        modified_time = File.mtime('./sass/' + item)
-      elsif modified_time < File.mtime('./sass/' + item)
-        modified_time = File.mtime('./sass/' + item)
-      end
-    end
-    modified_time_string = modified_time.strftime("%s")
-    sh 'compass compile'
-    sh 'rm -rf ./css/*.min.css'
-    sh "juicer merge ./css/* -o ./css/combined-#{modified_time_string}.min.css --force"
+    makeCSS('./sass/')
     jekyll('/Users/bjtitus/Dropbox/Projects/blog/_site/')
   end
   sh 'rm -rf config.rb'
+end
+
+def makeCSS(*args)
+  require 'yaml'
+  require 'fileutils'
+  config = YAML.load(File.read("_config.yml"))
+  path = args[0]
+  
+  modified_time = 0
+  Dir.foreach(path) do |item|
+    if modified_time == 0
+      modified_time = File.mtime(path + item)
+    elsif modified_time < File.mtime(path + item)
+      modified_time = File.mtime(path + item)
+    end
+  end
+  modified_time_string = modified_time.strftime("%s")
+  sh 'compass compile'
+  sh 'rm -rf ./css/*.min.css'
+  FileUtils.mv('./css/combined.css', "./css/combined-#{modified_time_string}.min.css")
+  #sh "juicer merge ./css/combined.css -o ./css/combined-#{modified_time_string}.min.css --force"
+  config["combined_css_name"] = "combined-#{modified_time_string}.min.css"
+  File.open("_config.yml", 'w'){ |f| YAML.dump(config, f) }
 end
 
 def jekyll(*args)

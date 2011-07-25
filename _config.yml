@@ -1,13 +1,10 @@
+--- 
+lsi: true
 markdown: rdiscount
+exclude: 
+- sass/
+- Rakefile
+- config.rb
 pygments: true
-lsi: true # Enabled to create better "related posts" list. Will increase compile time
-exclude: ['sass/', 'Rakefile', 'config.rb']
-
-# Local
-#static_path: /Users/bjtitus/Dropbox/Projects/blog/_site
-
-# Local Python server: python -m SimpleHTTPServer [port]
-#static_path: 
-
-# LIVE
+combined_css_name: combined-1311620780.min.css
 static_path: http://s.half-news.com/blog
