@@ -58,8 +58,18 @@ task :generate do
     # need to make a symbolic link to the appropriate config file
     sh('smusher ./js')
     sh('smusher ./images')
+    modified_time = 0
+    Dir.foreach('./sass/') do |item|
+      if modified_time == 0
+        modified_time = File.mtime('./sass/' + item)
+      else modified_time < File.mtime('./sass/' + item)
+        modified_time = File.mtime('./sass/' + item)
+      end
+    end
+    modified_time_string = modified_time.strftime("%s")
     sh 'compass compile'
-    sh 'juicer merge ./css/* -o ./css/combined.min.css --force'
+    sh 'rm -rf ./css/*.min.css'
+    sh "juicer merge ./css/* -o ./css/combined-#{modified_time_string}.min.css --force"
     jekyll('http://bjtitus.net')
     if(refreshCache == "yes")
       s3sync('./_site/css', 'publicfolder/blog/templates', 'gzip')
@@ -69,8 +79,18 @@ task :generate do
   else
     puts "Starting Local."
     sh 'cat parent_config.rb local_config.rb > config.rb'
+    modified_time = 0
+    Dir.foreach('./sass/') do |item|
+      if modified_time == 0
+        modified_time = File.mtime('./sass/' + item)
+      else modified_time < File.mtime('./sass/' + item)
+        modified_time = File.mtime('./sass/' + item)
+      end
+    end
+    modified_time_string = modified_time.strftime("%s")
     sh 'compass compile'
-    sh 'juicer merge ./css/* -o ./css/combined.min.css --force'
+    sh 'rm -rf ./css/*.min.css'
+    sh "juicer merge ./css/* -o ./css/combined-#{modified_time_string}.min.css --force"
     jekyll('/Users/bjtitus/Dropbox/Projects/blog/_site/')
   end
   sh 'rm -rf config.rb'
