@@ -55,7 +55,7 @@ nav {
 }
 
 nav .but {
-	border: 1px solid #ddd;
+	border: 1px solid #ddd !important;
 	border-radius: 8px;
 	-moz-border-radius: 8px;
 	-webkit-border-radius: 8px;
@@ -103,7 +103,7 @@ nav .but {
 
 article {
   font-family: 'Helvetica Neue', helvetica, sans-serif;
-  border-bottom: 1px dashed #DDD;
+  border-bottom: 1px dashed #DDD !important;
   padding: 5px;
 }
 
