@@ -191,7 +191,7 @@ time {
 }
 
 footer {
-	width: 108px;
+	width: 144px;
 	margin-left:auto !important;
 	margin-right:auto !important;
 }
@@ -246,6 +246,12 @@ footer a {
 	width: 32px;
 	height: 32px;
 	@include social-sprite(linkedin_32);
+}
+
+#googleplus {
+	width: 32px;
+	height: 32px;
+	@include social-sprite(google_plus_32);
 }
 
 #rss {
