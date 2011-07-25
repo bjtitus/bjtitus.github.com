@@ -22,22 +22,22 @@ While installing software on my new Macbook Air I thought it would be interestin
 5. [iTerm 2] - I never really liked iTerm and didn't think it was necessary to have a terminal replacement. However, iTerm 2 has some awesome features (timeline is invaluable) and I love the build in Visor like view to quickly pop in and out of a session.
 
 <img style="border:none;align:center;" src="{{ site.static_path }}/assets/appicons/ThingsLogo.png">
-6. [Things] - Even though I have nearly given up on Cultured Code's over the air sync, I still like the Things interface better than nearly any other competitor ([The Hit List] comes close). Now that they say there will be testing of iOS syncinc in August I will be holding out. In the meantime, I have been trying to use [Asana] but the lack of a mobile interface is frustrating.
+6. [Things] - Even though I have nearly given up on Cultured Code's over the air sync, I still like the Things interface better than nearly any other competitor ([The Hit List] comes close). Now that they say there will be testing of iOS syncing in August I will be holding out. In the meantime, I have been trying to use [Asana] but the lack of a mobile interface is frustrating.
 
 <img style="border:none;align:center;" src="{{ site.static_path }}/assets/appicons/byword.png">
 7. [Byword] - Ever since the great and timely support I got from Byword's developer when asking for a trial version, I have wanted to use Byword for any little writing tasks. The new live markdown preview finally brings it up to par with iaWriter.
 
 <img style="border:none;align:center;" src="{{ site.static_path }}/assets/appicons/accessorizer.png">
-8. [Accessorizer] - Accessorizer was a reccommendation from a friend and after using it for several weeks it has become an indispensable development tool. Simply enter your variables into Accessorizer and it will generate implementation and dealloc formats for you. It does a ton of other stuff and is highly customizable, allowing you to tweak its formatting to your preferred style.
+8. [Accessorizer] - Accessorizer was a recommendation from a friend and after using it for several weeks it has become an indispensable development tool. Simply enter your variables into Accessorizer and it will generate implementation and dealloc formats for you. It does a ton of other stuff and is highly customizable, allowing you to tweak its formatting to your preferred style.
 
 <img style="border:none;align:center;" src="{{ site.static_path }}/assets/appicons/growl.png">
 9. [Growl] - Growl notifications are invaluable to me. From notifications about what song is playing to new emails, chats, and file transfer completions, Growl's gentle distractions are highly customizable. There will soon be a Mac App Store version of Growl which may have some effect on its capabilities.
 
 <img style="border:none;align:center;" src="{{ site.static_path }}/assets/appicons/ohmyzsh.png">
-10. [Oh My ZSH] - Luckily, ZSH is installed on Lion so all it takes is a little project like Oh-My-ZSH to make your shell experience a whole lot better! The fantastic color schemes and modules that come with Oh-My-ZSH make the default bash shell look nearly unuseable in comparison.
+10. [Oh My ZSH] - Luckily, ZSH is installed on Lion so all it takes is a little project like Oh-My-ZSH to make your shell experience a whole lot better! The fantastic color schemes and modules that come with Oh-My-ZSH make the default bash shell look nearly unusable in comparison.
 <br/>
 
-There are others like Chrome Canary, Twitter, Skype, Spotify, Dropbox, Transmit, Textmate, and others which I didn't list here because it seems like they are on every list. See a larger list [here](http://bagcheck.com/bag/6035-favorite-mac-applications).
+There are others like Chrome Canary, Twitter, Skype, Spotify, Dropbox, Transmit, Textmate, and more which I didn't list here because it seems like they are on every list. See a larger list [here](http://bagcheck.com/bag/6035-favorite-mac-applications).
 
 [Moom]: http://manytricks.com/moom/ "Moom"
 [Alfred]: http://www.alfredapp.com/ "Alfred App"
