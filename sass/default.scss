@@ -102,9 +102,9 @@ nav .but {
 }
 
 article {
-  font-family: 'Helvetica Neue', helvetica, sans-serif;
+  font-family: 'Helvetica Neue', helvetica, sans-serif !important;
   border-bottom: 1px dashed #DDD !important;
-  padding: 5px;
+  padding: 5px !important;
 }
 
 article h2 {
