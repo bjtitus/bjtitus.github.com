@@ -62,7 +62,7 @@ task :generate do
     Dir.foreach('./sass/') do |item|
       if modified_time == 0
         modified_time = File.mtime('./sass/' + item)
-      else modified_time < File.mtime('./sass/' + item)
+      elsif modified_time < File.mtime('./sass/' + item)
         modified_time = File.mtime('./sass/' + item)
       end
     end
@@ -83,7 +83,7 @@ task :generate do
     Dir.foreach('./sass/') do |item|
       if modified_time == 0
         modified_time = File.mtime('./sass/' + item)
-      else modified_time < File.mtime('./sass/' + item)
+      elsif modified_time < File.mtime('./sass/' + item)
         modified_time = File.mtime('./sass/' + item)
       end
     end
@@ -148,7 +148,7 @@ def s3sync(*args)
   
   puts files
 
-  invalidate(files)
+  #invalidate(files)
 end
 
 def invalidate(*args)
