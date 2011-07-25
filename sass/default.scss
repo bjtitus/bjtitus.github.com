@@ -7,6 +7,8 @@ $default-padding: 0px;
 $footnote-size: 0.7em;
 $body-width: 35%;
 
+@import "social/*.png";
+
 @mixin right-small($size) {
   text-align: right; 
   font-size: $size;
@@ -230,25 +232,25 @@ footer a {
 #twitter {
 	width: 32px;
 	height: 32px;
-	background: sprite-image("social/twitter_32.png");
+	@include social-sprite(twitter_32);
 }
 
 #github {
 	width: 32px;
 	height: 32px;
-	background: sprite-image("social/github_32.png");
+	@include social-sprite(github_32);
 }
 
 #linkedin {
 	width: 32px;
 	height: 32px;
-	background: sprite-image("social/linkedin_32.png");
+	@include social-sprite(linkedin_32);
 }
 
 #rss {
 	width: 32px;
 	height: 32px;
-	background: sprite-image("social/rss_32.png");
+	@include social-sprite(rss_32);
 	display: inline-block;
 	margin-top: -3px;
 }

@@ -1,1 +1,1 @@
-http_path = "http://files.bjtitus.net/blog/templates/"
+http_path = "http://s.half-news.com/blog/templates/"

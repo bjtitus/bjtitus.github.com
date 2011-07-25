@@ -8,7 +8,7 @@ A [Business Insider article](http://www.businessinsider.com/microsoft-had-to-mak
 <br/>
 ###The Mobile Landscape
 <script type="text/javascript">
-google.load('visualization', '1', {packages: ['corechart']});
+google.setOnLoadCallback(drawVisualization);
 
 function drawVisualization() {
         // Some raw data (not necessarily accurate)

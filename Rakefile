@@ -59,6 +59,7 @@ task :generate do
     sh('smusher ./js')
     sh('smusher ./images')
     sh 'compass compile'
+    sh 'juicer merge ./css/* -o ./css/combined.min.css --force'
     jekyll('http://bjtitus.net')
     if(refreshCache == "yes")
       s3sync('./_site/css', 'publicfolder/blog/templates', 'gzip')
@@ -69,6 +70,7 @@ task :generate do
     puts "Starting Local."
     sh 'cat parent_config.rb local_config.rb > config.rb'
     sh 'compass compile'
+    sh 'juicer merge ./css/* -o ./css/combined.min.css --force'
     jekyll('/Users/bjtitus/Dropbox/Projects/blog/_site/')
   end
   sh 'rm -rf config.rb'
