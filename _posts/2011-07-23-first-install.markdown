@@ -28,7 +28,7 @@ While installing software on my new Macbook Air I thought it would be interestin
 7. [Byword] - Ever since the great and timely support I got from Byword's developer when asking for a trial version, I have wanted to use Byword for any little writing tasks. The new live markdown preview finally brings it up to par with iaWriter.
 
 <img style="border:none;align:center;" src="{{ site.static_path }}/assets/appicons/accessorizer.png">
-8. [Accessorizer] - Accessorizer was a recommendation from a friend and after using it for several weeks it has become an indispensable development tool. Simply enter your variables into Accessorizer and it will generate implementation and dealloc formats for you. It does a ton of other stuff and is highly customizable, allowing you to tweak its formatting to your preferred style.
+8. [Accessorizer] - Accessorizer was a recommendation from a friend ([@davidhamrick]) and after using it for several weeks it has become an indispensable development tool. Simply enter your variables into Accessorizer and it will generate implementation and dealloc formats for you. It does a ton of other stuff and is highly customizable, allowing you to tweak its formatting to your preferred style.
 
 <img style="border:none;align:center;" src="{{ site.static_path }}/assets/appicons/growl.png">
 9. [Growl] - Growl notifications are invaluable to me. From notifications about what song is playing to new emails, chats, and file transfer completions, Growl's gentle distractions are highly customizable. There will soon be a Mac App Store version of Growl which may have some effect on its capabilities.
@@ -49,5 +49,6 @@ There are others like Chrome Canary, Twitter, Skype, Spotify, Dropbox, Transmit,
 [Asana]: http://asana.com "Asana To-Do"
 [Byword]: http://bywordapp.com/
 [Accessorizer]: http://www.kevincallahan.org/software/accessorizer.html
+[@davidhamrick]: http://twitter.com/#!/davidhamrick
 [Growl]: http://growl.info/
 [Oh My ZSH]: https://github.com/robbyrussell/oh-my-zsh
