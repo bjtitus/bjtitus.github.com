@@ -1,10 +1,10 @@
 --- 
 lsi: true
-markdown: rdiscount
 exclude: 
 - sass/
 - Rakefile
 - config.rb
+markdown: rdiscount
 pygments: true
-combined_css_name: combined-1311620780.min.css
+combined_css_name: combined-1312131405.min.css
 static_path: http://s.half-news.com/blog
