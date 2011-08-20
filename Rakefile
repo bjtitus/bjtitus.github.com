@@ -63,18 +63,18 @@ task :generate do
     sh('smusher ./images')
     
     currentConf = YAML.load(File.read("_remoteconfig.yml"))
-    config["static_path"] = currentconf["static_path"]
-    config["static_template"] = currentconf["static_template"]
+    config["static_path"] = currentConf["static_path"]
+    config["static_template"] = currentConf["static_template"]
     
     combinedname = makeCSS('./sass/')
     config["combined_css_name"] = combinedname
     File.open("_config.yml", 'w'){ |f| YAML.dump(config, f) }
     jekyll('http://bjtitus.net')
-    if(refreshCache == "yes")
+    #if(refreshCache == "yes")
       s3sync('./_site/css', 'publicfolder/blog/templates', 'gzip')
       s3sync('./_site/js', 'publicfolder/blog/templates', 'gzip')
       s3sync('./_site/images', 'publicfolder/blog/templates')
-    end
+    #end
   else
     puts "Starting Local."
     sh 'cat parent_config.rb local_config.rb > config.rb'
