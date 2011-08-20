@@ -51,6 +51,9 @@ desc 'nuke, build and compass'
 task :generate do
   isLive = ENV['live']
   refreshCache = ENV['refresh']
+  require 'yaml'
+  require 'fileutils'
+  config = YAML.load(File.read("_config.yml"))
   sh 'rm -rf _site'
   if(isLive == "yes")
     puts "Pushing Live!"
@@ -58,7 +61,14 @@ task :generate do
     # need to make a symbolic link to the appropriate config file
     sh('smusher ./js')
     sh('smusher ./images')
-    makeCSS('./sass/')
+    
+    currentConf = YAML.load(File.read("_remoteconfig.yml"))
+    config["static_path"] = currentconf["static_path"]
+    config["static_template"] = currentconf["static_template"]
+    
+    combinedname = makeCSS('./sass/')
+    config["combined_css_name"] = combinedname
+    File.open("_config.yml", 'w'){ |f| YAML.dump(config, f) }
     jekyll('http://bjtitus.net')
     if(refreshCache == "yes")
       s3sync('./_site/css', 'publicfolder/blog/templates', 'gzip')
@@ -68,16 +78,20 @@ task :generate do
   else
     puts "Starting Local."
     sh 'cat parent_config.rb local_config.rb > config.rb'
-    makeCSS('./sass/')
+    
+    currentConf = YAML.load(File.read("_localconfig.yml"))
+    config["static_path"] = currentConf["static_path"]
+    config["static_template"] = currentConf["static_template"]
+    
+    combinedname = makeCSS('./sass/')
+    config["combined_css_name"] = combinedname
+    File.open("_config.yml", 'w'){ |f| YAML.dump(config, f) }
     jekyll('/Users/bjtitus/Dropbox/Projects/blog/_site/')
   end
   sh 'rm -rf config.rb'
 end
 
 def makeCSS(*args)
-  require 'yaml'
-  require 'fileutils'
-  config = YAML.load(File.read("_config.yml"))
   path = args[0]
   
   modified_time = 0
@@ -93,8 +107,7 @@ def makeCSS(*args)
   sh 'rm -rf ./css/*.min.css'
   FileUtils.mv('./css/combined.css', "./css/combined-#{modified_time_string}.min.css")
   #sh "juicer merge ./css/combined.css -o ./css/combined-#{modified_time_string}.min.css --force"
-  config["combined_css_name"] = "combined-#{modified_time_string}.min.css"
-  File.open("_config.yml", 'w'){ |f| YAML.dump(config, f) }
+  return "combined-#{modified_time_string}.min.css"
 end
 
 def jekyll(*args)

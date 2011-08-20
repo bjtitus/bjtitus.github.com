@@ -4,7 +4,10 @@ exclude:
 - sass/
 - Rakefile
 - config.rb
+- local_config.rb
+- parent_config.rb
 markdown: rdiscount
 pygments: true
-combined_css_name: combined-1312131405.min.css
-static_path: http://s.half-news.com/blog
+combined_css_name: combined-1313803558.min.css
+static_path: /
+static_template: /
