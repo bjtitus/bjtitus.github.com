@@ -63,8 +63,8 @@ task :generate do
     sh('smusher ./images')
     
     currentConf = YAML.load(File.read("_remoteconfig.yml"))
-    config["static_path"] = currentconf["static_path"]
-    config["static_template"] = currentconf["static_template"]
+    config["static_path"] = currentConf["static_path"]
+    config["static_template"] = currentConf["static_template"]
     
     combinedname = makeCSS('./sass/')
     config["combined_css_name"] = combinedname
