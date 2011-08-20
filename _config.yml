@@ -6,8 +6,9 @@ exclude:
 - config.rb
 - local_config.rb
 - parent_config.rb
+- remote_config.rb
 markdown: rdiscount
 pygments: true
 combined_css_name: combined-1313807474.min.css
-static_path: /
-static_template: /
+static_path: http://s.half-news.com/blog/
+static_template: http://s.half-news.com/blog/templates/
