@@ -66,8 +66,10 @@ task :generate do
     config["static_path"] = currentConf["static_path"]
     config["static_template"] = currentConf["static_template"]
     
-    combinedname = makeCSS('./sass/')
-    config["combined_css_name"] = combinedname
+    combinedname = makeCSS('./sass/', config["combined_css_name"])
+    if(combinedname != 0)
+      config["combined_css_name"] = combinedname
+    end
     File.open("_config.yml", 'w'){ |f| YAML.dump(config, f) }
     jekyll('http://bjtitus.net')
     #if(refreshCache == "yes")
@@ -83,8 +85,10 @@ task :generate do
     config["static_path"] = currentConf["static_path"]
     config["static_template"] = currentConf["static_template"]
     
-    combinedname = makeCSS('./sass/')
-    config["combined_css_name"] = combinedname
+    combinedname = makeCSS('./sass/', config["combined_css_name"])
+    if(combinedname != 0)
+      config["combined_css_name"] = combinedname
+    end
     File.open("_config.yml", 'w'){ |f| YAML.dump(config, f) }
     jekyll('/Users/bjtitus/Dropbox/Projects/blog/_site/')
   end
@@ -93,21 +97,30 @@ end
 
 def makeCSS(*args)
   path = args[0]
+  combined_css_name = args[1]
   
   modified_time = 0
   Dir.foreach(path) do |item|
-    if modified_time == 0
-      modified_time = File.mtime(path + item)
-    elsif modified_time < File.mtime(path + item)
-      modified_time = File.mtime(path + item)
+    if not(item.include? "DS_Store") && (item != "..") && (item != ".")
+      puts("Files: " + path + item)
+      if modified_time == 0
+        modified_time = File.mtime(path + item)
+      elsif modified_time < File.mtime(path + item)
+        modified_time = File.mtime(path + item)
+      end
     end
   end
   modified_time_string = modified_time.strftime("%s")
-  sh 'compass compile'
-  sh 'rm -rf ./css/*.min.css'
-  FileUtils.mv('./css/combined.css', "./css/combined-#{modified_time_string}.min.css")
-  #sh "juicer merge ./css/combined.css -o ./css/combined-#{modified_time_string}.min.css --force"
-  return "combined-#{modified_time_string}.min.css"
+  puts("Modified: " + modified_time_string + " | Recorded Time: " + combined_css_name.split('-')[1].split('.')[0])
+  if modified_time_string != combined_css_name.split('-')[1].split('.')[0]
+    sh 'compass compile'
+    sh 'rm -rf ./css/*.min.css'
+    FileUtils.mv('./css/combined.css', "./css/combined-#{modified_time_string}.min.css")
+    #sh "juicer merge ./css/combined.css -o ./css/combined-#{modified_time_string}.min.css --force"
+    return "combined-#{modified_time_string}.min.css"
+  else
+    return 0
+  end
 end
 
 def jekyll(*args)
