@@ -57,16 +57,16 @@ task :generate do
   sh 'rm -rf _site'
   if(isLive == "yes")
     puts "Pushing Live!"
-    sh 'cat parent_config.rb remote_config.rb > config.rb'
+    sh 'cat ./config/parent_config.rb ./config/remote/remote_config.rb > config.rb'
     # need to make a symbolic link to the appropriate config file
     sh('smusher ./js')
     sh('smusher ./images')
     
-    currentConf = YAML.load(File.read("_remoteconfig.yml"))
+    currentConf = YAML.load(File.read("./config/remote/_remoteconfig.yml"))
     config["static_path"] = currentConf["static_path"]
     config["static_template"] = currentConf["static_template"]
     
-    combinedname = makeCSS('./sass/', config["combined_css_name"])
+    combinedname = makeCSS(['./sass/', './config/remote/', './config/parent_config.rb'], config["combined_css_name"])
     if(combinedname != 0)
       config["combined_css_name"] = combinedname
     end
@@ -79,13 +79,13 @@ task :generate do
     #end
   else
     puts "Starting Local."
-    sh 'cat parent_config.rb local_config.rb > config.rb'
+    sh 'cat ./config/parent_config.rb ./config/local/local_config.rb > config.rb'
     
-    currentConf = YAML.load(File.read("_localconfig.yml"))
+    currentConf = YAML.load(File.read("./config/local/_localconfig.yml"))
     config["static_path"] = currentConf["static_path"]
     config["static_template"] = currentConf["static_template"]
     
-    combinedname = makeCSS('./sass/', config["combined_css_name"])
+    combinedname = makeCSS(['./sass/', './config/local/', './config/parent_config.rb'], config["combined_css_name"])
     if(combinedname != 0)
       config["combined_css_name"] = combinedname
     end
@@ -96,20 +96,31 @@ task :generate do
 end
 
 def makeCSS(*args)
-  path = args[0]
+  paths = args[0]
   combined_css_name = args[1]
   
   modified_time = 0
-  Dir.foreach(path) do |item|
-    if not(item.include? "DS_Store") && (item != "..") && (item != ".")
-      puts("Files: " + path + item)
+  for path in paths
+    if path[path.length-1] != "/"
       if modified_time == 0
-        modified_time = File.mtime(path + item)
-      elsif modified_time < File.mtime(path + item)
-        modified_time = File.mtime(path + item)
-      end
+        modified_time = File.mtime(path)
+      elsif modified_time < File.mtime(path)
+        modified_time = File.mtime(path)
+    end
+    else
+      Dir.foreach(path) do |item|
+        if not(item.include? "DS_Store") && (item != "..") && (item != ".") && ((item.include? "rb") || (item.include? "scss"))
+          puts("Files: " + path + item)
+          if modified_time == 0
+            modified_time = File.mtime(path + item)
+          elsif modified_time < File.mtime(path + item)
+            modified_time = File.mtime(path + item)
+          end
+        end
+     end
     end
   end
+  
   modified_time_string = modified_time.strftime("%s")
   puts("Modified: " + modified_time_string + " | Recorded Time: " + combined_css_name.split('-')[1].split('.')[0])
   if modified_time_string != combined_css_name.split('-')[1].split('.')[0]

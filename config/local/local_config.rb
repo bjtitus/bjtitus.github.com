@@ -1,2 +1,4 @@
 #http_path = "/Users/bjtitus/Dropbox/Projects/blog/_site/"
-#http_path = "http://s.half-news.com/blog/templates/"
+
+http_path = "/"
+http_images_path = "/images/"

@@ -4,3 +4,4 @@ _site
 s3.config
 
 /css/default.css
+/localConfig.yml
