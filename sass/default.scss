@@ -143,7 +143,8 @@ article img {
 }
 
 #container {
-	width: 700px;
+	width: 80%;
+	max-width: 750px;
 	@include centrate;
 }
 

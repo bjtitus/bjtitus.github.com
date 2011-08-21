@@ -9,6 +9,6 @@ exclude:
 - remote_config.rb
 markdown: rdiscount
 pygments: true
-combined_css_name: combined-1313903634.min.css
-static_path: http://s.half-news.com/blog/
-static_template: http://s.half-news.com/blog/templates/
+combined_css_name: combined-1313942953.min.css
+static_path: /
+static_template: /
