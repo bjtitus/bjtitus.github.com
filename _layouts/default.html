@@ -73,8 +73,16 @@
   <div id="container">
     <nav>
 		<a class="but" href="/index.html">Blog</a>
-		<span style="float:right;"><a class="but" href="/about.html">About</a><a class="but" href="http://photos.bjtitus.net">Photos</a><a title="RSS" id="rss" href="/atom.xml"></a></span>
+		<span style="float:right;">
+			<a class="but" href="/about.html">About</a>
+			<a class="but" href="http://photos.bjtitus.net">Photos</a>
+			<a title="RSS" id="rss" href="/atom.xml"></a>
+		</span>
     </nav>
+	<form>
+	    <input name="q" value="" placeholder="Search" type="search">
+	    <input type="submit" value="" id="search">
+	</form>
     
     <div id="main" role="main">
 	{{ content }}
