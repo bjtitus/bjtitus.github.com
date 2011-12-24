@@ -22,12 +22,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Place favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
-  <link rel="shortcut icon" href="images/template/favicon.ico">
+  <link rel="shortcut icon" href="/images/template/favicon.ico">
   <!--TODO: Add this <link rel="apple-touch-icon" href="{{ site.static_path }}/templates/apple-touch-icon.png"> -->
 
 
   <!-- CSS : implied media="all" -->
-  <link rel="stylesheet" href="css/combined.css" type="text/css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="/css/combined.css" type="text/css" media="screen" title="no title" charset="utf-8">
 
   <!-- TODO: Look into loading with WebFont loader to prevent flashing -->
   <link  href="http://fonts.googleapis.com/css?family=Puritan:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css" >
@@ -46,7 +46,7 @@
 	$LAB
 	.script("http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.0.6/modernizr.min.js")
 	.script("http://cdnjs.cloudflare.com/ajax/libs/jquery/1.6.2/jquery.min.js")
-	.script("js/script.js")
+	.script("/js/script.js")
 	.script("http://www.google-analytics.com/ga.js")
 	.wait(function(){
 		window.pageTracker = _gat._createTracker("UA-91939-15");
@@ -56,7 +56,7 @@
     window.pageTracker._trackPageview();
 	window.pageTracker._trackPageLoadTime();
 	})
-	.script("js/plugins.js").wait(function() {
+	.script("/js/plugins.js").wait(function() {
         $('#search_results').tapir({'token': '4dc81e9b3f61b01c6b0000df'});
     });
   </script>
