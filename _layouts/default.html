@@ -50,7 +50,16 @@
     $('#search_results').tapir({'token': '4dc81e9b3f61b01c6b0000df'});
   })
 	.script("{{ site.static_path }}js/script.js")
-	.script("http://mint.bjtitus.net/?js");
+	.script("http://mint.bjtitus.net/?js")
+	.script("http://www.google-analytics.com/ga.js")
+	.wait(function(){
+		window.pageTracker = _gat._createTracker("UA-91939-15");
+    window.pageTracker._setDomainName("bjtitus.net");
+    window.pageTracker._trackPageLoadTime();
+                  // and other API functions as necessary
+    window.pageTracker._trackPageview();
+	window.pageTracker._trackPageLoadTime();
+	})
   </script>
 
 </head>
@@ -104,6 +113,5 @@
     s.parentNode.insertBefore(t, s);
   })();
 </script>
-
 </body>
 </html>
