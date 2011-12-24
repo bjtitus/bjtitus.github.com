@@ -9,6 +9,6 @@ exclude:
 - remote_config.rb
 markdown: rdiscount
 pygments: true
-combined_css_name: combined-1313907127.min.css
+combined_css_name: combined-1313943013.min.css
 static_path: /
 static_template: /

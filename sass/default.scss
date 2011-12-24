@@ -7,7 +7,7 @@ $default-padding: 0px;
 $footnote-size: 0.7em;
 $body-width: 35%;
 
-@import "social/*.png";
+@import "template/social/*.png";
 
 @mixin right-small($size) {
   text-align: right; 
