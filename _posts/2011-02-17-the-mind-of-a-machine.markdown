@@ -4,7 +4,7 @@ title: "The Mind of a Machine"
 date: Thu Feb 17 10:26:23 -0700 2011
 ---
 
-<img height="344px" width="600px" src="http://s.half-news.com/blog/assets/jeopardy_watson.jpeg"/>  
+<img height="344px" width="600px" src="/images/posts/jeopardy_watson.jpeg"/>  
 <br/>
 You've probably already heard much about [IBM's Watson supercomputer](http://www-03.ibm.com/innovation/us/watson/): the first machine to ever compete on Jeopardy and, quite possibly, the best natural language interpreter on the planet. While watching the IBM Challenge over the past 3 days, I was awestruck at just how far this team has come in understanding the nuances of the English language. 
 <br/>
@@ -25,7 +25,7 @@ The future looks bright with the technology that Watson uses. A combination of p
 ### Watson vs. Big Blue
 Deep Blue is probably the best known super computer in the world. It's competition with chess Grandmaster Gary Kasparov is the classic example of man vs. machine. However, Watson is certainly not just a more powerful Deep Blue and will hopefully not suffer the same fate.  
 <br/>
-<img width="459" height="350" src="http://s.half-news.com/blog/assets/fractal-tree.jpeg"/>
+<img width="459" height="350" src="/images/posts/fractal-tree.jpeg"/>
 <br/>
 Deep Blue used a simple recursive search which is well suited to computational modeling. By simply iterating through many possible chess moves in order to determine the best results, there is little way for a human to come out on top. This can be visualized by the tree shown above.  
 <br/>
