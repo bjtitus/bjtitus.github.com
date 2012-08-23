@@ -72,11 +72,11 @@ task :generate do
     end
     File.open("_config.yml", 'w'){ |f| YAML.dump(config, f) }
     jekyll('http://bjtitus.net')
-    #if(refreshCache == "yes")
-    #  s3sync('./_site/css', 'publicfolder/blog/templates', 'gzip')
-    #  s3sync('./_site/js', 'publicfolder/blog/templates', 'gzip')
-    #  s3sync('./_site/images', 'publicfolder/blog/templates')
-    #end
+    if(refreshCache == "yes")
+     s3sync('./_site/css', 'publicfolder/blog/templates', 'gzip')
+     s3sync('./_site/js', 'publicfolder/blog/templates', 'gzip')
+     s3sync('./_site/images', 'publicfolder/blog/templates')
+    end
   else
     puts "Starting Local."
     sh 'cat ./config/parent_config.rb ./config/local/local_config.rb > config.rb'

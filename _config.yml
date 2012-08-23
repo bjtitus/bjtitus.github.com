@@ -14,4 +14,6 @@ static_path: http://s.half-news.com/blog/
 static_template: http://s.half-news.com/blog/templates/
 prose:
   metadata:
-    _posts/articles: ! 'title:  "Title of your article"'
+    "_posts/articles": |
+     title:  "Title of your article"
+     template: post
