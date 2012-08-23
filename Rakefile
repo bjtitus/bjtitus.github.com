@@ -19,7 +19,7 @@ task :new do
   if type == "bit"
     TARGET_DIR = "_bits"
   elsif future.to_i < 3
-    TARGET_DIR = "_posts"
+    TARGET_DIR = "_posts/articles"
   else
     TARGET_DIR = "_drafts"
   end

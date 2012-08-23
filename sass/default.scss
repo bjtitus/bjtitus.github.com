@@ -157,6 +157,34 @@ article {
 
 article h2 {
 	text-shadow: 2px 1px 1px #FFF;
+	font-family: "Open Sans",sans-serif;
+	font-weight: bold;
+	color: black;
+	font-size: 1.8em;
+}
+
+article .body h1{
+	font-size: 1.4em;
+	text-shadow: inherit;
+	font-family: inherit;
+	font-weight: bold;
+	color: inherit;
+}
+
+article .body h2{
+	font-size: 1.2em;
+	text-shadow: inherit;
+	font-family: inherit;
+	font-weight: bold;
+	color: inherit;
+}
+
+article .body h3{
+	font-size: 1.0em;
+	text-shadow: inherit;
+	font-family: inherit;
+	font-weight: bold;
+	color: inherit;
 }
 
 article a {
@@ -167,7 +195,7 @@ article a {
 article .body {
 	padding:10px;
 	font-size: 15px;
-	font-family: georgia, serif;
+	font-family: 'Helvetica Neue', georgia, serif;
 	line-height:1.4;
 }
 

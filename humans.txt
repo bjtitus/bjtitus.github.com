@@ -9,4 +9,4 @@
 	Language:English
 	Doctype:HTML5 with CSS3
 	Tools:Jekyll, Git, Github, Transmit
-	IDE:Textmate
+	IDE:Textmate/Sublime Text 2

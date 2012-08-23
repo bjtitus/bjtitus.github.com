@@ -7,4 +7,3 @@ output_style = :compressed
 
 # Live
 #http_path = "http://files.bjtitus.net/blog/templates"
-#http_path = "/Users/bjtitus/Dropbox/Projects/blog/_site/"
