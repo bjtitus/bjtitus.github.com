@@ -150,17 +150,19 @@ nav .but {
 }
 
 article {
-  font-family: 'Helvetica Neue', helvetica, sans-serif;
+  font-family: 'Roboto Slab', helvetica, sans-serif;
   border-bottom: 1px dashed #DDD;
   padding: 5px;
 }
 
 article h2 {
 	text-shadow: 2px 1px 1px #FFF;
-	font-family: "Open Sans",sans-serif;
+	font-family: "Roboto Slab",sans-serif;
 	font-weight: bold;
 	color: black;
-	font-size: 1.8em;
+	font-size: 25px;
+	text-align: center;
+	margin-top: 20px;
 }
 
 article .body h1{
@@ -195,8 +197,9 @@ article a {
 article .body {
 	padding:10px;
 	font-size: 15px;
-	font-family: 'Helvetica Neue', georgia, serif;
 	line-height:1.4;
+	font-weight: 300;
+	line-height: 1.5;
 }
 
 article .body a {
@@ -219,8 +222,8 @@ article img {
 }
 
 #container {
-	width: 80%;
-	max-width: 750px;
+	width: 99%;
+	max-width: 1000px;
 	@include centrate;
 }
 
