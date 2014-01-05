@@ -13,6 +13,7 @@ combined_css_name: true
 static_path: http://s.half-news.com/blog/
 static_template: http://s.half-news.com/blog/templates/
 prose:
+  siteurl: "http://bjtitus.net"
   metadata:
     "_posts/articles": |
      title:  "Title of your article"
