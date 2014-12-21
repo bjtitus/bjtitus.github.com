@@ -4,6 +4,8 @@ title: "Living in the Cloud"
 date: Fri Mar 04 23:25:12 -0700 2011
 ---
 
+TEST
+
 After running into yet another hard drive failure with a friend's computer recently, I decided that I should post about a few tools that ensures nearly none of my work can be lost due to any hardware failure and, at the same time, allows me to access my work from anywhere.
 <br/>
 
