@@ -1,0 +1,9 @@
+{% assign wordCount = include.content | number_of_words %}
+{% if wordCount > 360 %}
+	{% assign minutes = wordCount | divided_by:180 %}
+	<div title="{{ minutes | append: ' minutes' }}" class="timeCount">
+		{% for time in (1...minutes) %}
+			<div class="timeBlock"></div>
+		{% endfor %}
+	</div>
+{% endif %}

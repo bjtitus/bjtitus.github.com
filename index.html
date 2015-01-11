@@ -1,40 +1,24 @@
 ---
 layout: default
-title: Bjtitus.net
 ---
 
-<div id="notes">
-  {{## This is for the latest post ##}}
-  {% for post in site.posts limit:5 %}
-  <article>
-	<a onClick="_kmq.push(['record', 'Viewed Full Post']);" href=".{{ post.url }}"><h2>{{ post.title }}</h2></a>
-	<div class="body">
-		{{ post.content }}
-	</div>
-	<p><time datetime="{{ post.date }}">{{ post.date | date:"%B %d, %Y" }}</time></p>
-  </article>
-  {% endfor %}
-	<!--<div id="cse" style="float:right;width: 300px;">Loading</div>
-	<script src="http://www.google.com/jsapi" type="text/javascript"></script>
-	<script type="text/javascript">
-	  google.load('search', '1', {language : 'en', style : google.loader.themes.MINIMALIST});
-	  google.setOnLoadCallback(function() {
-	    var customSearchControl = new google.search.CustomSearchControl('002181372021025347602:nlxdwz6kv8q');
-	    customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
-	    var options = new google.search.DrawOptions();
-	    options.setAutoComplete(true);
-	    customSearchControl.draw('cse', options);
-	  }, true);
-	</script>-->
-  {{## This is the list of all posts except the latest ##}}
-  <div id="recent">
-	{% if site.posts > 1 %}
-	<h4>Recent Posts</h4>
-	  <ul class="posts">
-	    {% for post in site.posts limit:10 offset:2 %}
-	      <li><span class="mini-date">{{ post.date | date_to_string }}</span> &raquo; <a onClick="_kmq.push(['record', 'Viewed Full Post']);" href=".{{ post.url }}">{{ post.title }}</a></li>
-	    {% endfor %}
-	  </ul>
-	{% endif %}
-  </div>
+<div class="home">
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}
+			{% include word_count.html content=post.content %}
+          </a>
+        </h2>
+		{% if forloop.index0 < 2 %}
+			<div class="post-excerpt">
+				{{ post.excerpt }}
+			</div>
+		{% endif %}
+		<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      </li>
+    {% endfor %}
+  </ul>
 </div>

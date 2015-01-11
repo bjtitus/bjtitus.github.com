@@ -1,20 +1,16 @@
----
-lsi: true
-exclude:
-- sass/
-- Rakefile
-- config.rb
-- local_config.rb
-- parent_config.rb
-- remote_config.rb
-markdown: rdiscount
-pygments: true
-combined_css_name: true
-static_path: http://s.half-news.com/blog/
-static_template: http://s.half-news.com/blog/templates/
-prose:
-  siteurl: "http://bjtitus.net"
-  metadata:
-    "_posts/articles": |
-     title:  "Title of your article"
-     template: post
+# Site settings
+title: Titus Totidem
+email: brandon@titus.io
+description: > # this means to ignore newlines until "baseurl:"
+  A place for opinions, reviews, essays, and inherent biases.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://titus.io" # the base hostname & protocol for your site
+twitter_username: bjtitus
+github_username:  bjtitus
+stackoverflow_username: bjtitus
+stackoverflow_userid: 72319
+
+# Build settings
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "highlight", "underline", "strikethrough"]
