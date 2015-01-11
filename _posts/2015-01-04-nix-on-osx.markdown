@@ -1,0 +1,27 @@
+---
+layout: post
+title:  "Best of 2014"
+date:   2015-01-03 17:55:06
+published: false
+---
+
+## Installation
+
+Run the following bash + curl command to install nix. Make sure *not* to run as root
+
+`bash <(curl https://nixos.org/nix/install)`
+
+Nix is a functional package manager for Unix systems designed to be completely reproducable with full package isolation.
+
+Searching for a package:
+
+`nix-env -qa '<package search term>'`
+
+Installing a package:
+
+`nix-env -i <package name>`
+
+so in our case:
+
+`nix-env -i rust`
+
