@@ -3,7 +3,7 @@
  */
 .site-header {
     background-color: $background-color;
-    border-top: 5px solid $grey-color-dark;
+	padding-top: 10px;
     min-height: 42px;
 
     // Positioning context for the mobile navigation icon
@@ -11,16 +11,21 @@
 }
 
 .site-title {
-    font-size: 26px;
+    font-size: 18px;
     line-height: 42px;
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
+    font-family: Lato, Arial, sans-serif;
+	letter-spacing: 0.5px;
 
     &,
     &:visited {
-        color: $grey-color-dark;
+		color: $grey-color-light;
     }
+	&:hover {
+		color: $grey-color-dark;
+	}
 }
 
 .site-nav {
@@ -198,7 +203,7 @@
     font-family: Lato;
     font-weight: 300;
     // font-size: $small-font-size;
-    color: $grey-color-light;
+    color: $grey-color-extralight;
 
     .post-list > li & {
 		float: right;
@@ -275,7 +280,8 @@
 
 .timeCount {
 	display: inline-block;
-	height: 100%;
+	vertical-align: middle;
+	margin-left: 4px;
 }
 
 .timeBlock {
