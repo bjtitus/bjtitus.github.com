@@ -17,11 +17,16 @@
     margin-bottom: 0;
     float: left;
     font-family: Lato, Arial, sans-serif;
+//	text-transform: uppercase;
+//	font-weight: 400;
 	letter-spacing: 0.5px;
 
     &,
     &:visited {
 		color: $grey-color-light;
+//		text-shadow: 0px 2px 3px #fff;
+//		text-shadow: 1px 1px 5px #fff;
+//        color: $grey-color-dark;
     }
 	&:hover {
 		color: $grey-color-dark;
@@ -41,7 +46,7 @@
     .page-link {
         text-transform: uppercase;
         color: $grey-color;
-        border-bottom: 4px solid $grey-color-light;
+        border-bottom: 4px solid $grey-color-extralight;
         // color: $text-color;
         line-height: $base-line-height;
 
