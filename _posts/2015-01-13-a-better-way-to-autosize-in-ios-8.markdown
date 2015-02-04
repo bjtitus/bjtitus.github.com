@@ -13,7 +13,7 @@ For instance:
 ```swift
 var fittingSize = UILayoutFittingCompressedSize
 fittingSize.width = 320
-let size = myView.systemLayoutSizeFittingSize(fittingSize, withHorizontalFittingPriority: 1000, verticalFittingPriority)
+let size = myView.systemLayoutSizeFittingSize(fittingSize, withHorizontalFittingPriority: UILayoutPriorityDefaultHigh, verticalFittingPriority: UILayoutPriorityDefaultLow)
 // Size will be a value bounded by a maximum width of 320 with the proper height, as if I set a width constraint on myView
 ```
 
