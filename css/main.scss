@@ -40,7 +40,17 @@ $on-laptop:        800px;
     }
 }
 
+@mixin column-count($count) {
+	-moz-column-count: $count;
+    -webkit-column-count: $count;
+    column-count: $count;
+}
 
+@mixin column-gap($gap) {
+  -moz-column-gap: $gap;
+  -webkit-column-gap: $gap;
+  column-gap: $gap;
+}
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
@@ -48,3 +58,63 @@ $on-laptop:        800px;
         "layout",
         "syntax-highlighting"
 ;
+
+// Flexible grid
+
+@mixin columnGrid {
+  width: 90%;
+  max-width: 1400px;
+  margin: 20px auto;
+  line-height: 0;
+  @include column-gap(20);
+  @include column-count(5);
+    
+  img {
+    display: inline-block;
+    margin-bottom: 15px;
+    width: 100% !important;
+    height: auto !important;
+   }
+}
+
+.grid-2 {
+  @include columnGrid();
+}
+.grid-1 {
+  @include columnGrid();
+}
+
+
+@media (max-width: 1200px) {
+    .grid-2 {
+      @include column-count(2);
+    }
+    .grid-1 {
+      @include column-count(1);
+    }
+  }
+  @media (max-width: 1000px) {
+    .grid-2 {
+      @include column-count(2);
+    }
+    .grid-1 {
+      @include column-count(1);
+    }
+  }
+  @media (max-width: 800px) {
+    .grid-2 {
+      @include column-count(2);
+    }
+    .grid-1 {
+      @include column-count(1);
+    }
+  }
+
+  @media (max-width: 400px) {
+    .grid-2 {
+      @include column-count(1);
+    }
+    .grid-1 {
+      @include column-count(1);
+    }
+  }
