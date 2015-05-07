@@ -1,0 +1,12 @@
+---
+layout: page
+title: Photos
+permalink: /photos/
+---
+
+
+{% for set in site.photosets %}
+	<div>
+		<a href="{{ set.url | prepend: site.baseurl }}">{{ set.title }}</a>
+	</div>
+{% endfor %}
