@@ -30,7 +30,8 @@
 	          	updateOnResizeDown: true,
 	          	pixelStep: 5,
 	          	autoInsertCSSBestPractices: true,
-	          	lazyLoad: true
+	          	lazyLoad: true,
+	          	fitImgTagToContainerWidth: true
         	});
       	});
     </script>
@@ -61,10 +62,16 @@
 	for (var i = 0; i < images.length; i++) {
 		var image = images[i];
 
+		// Max width of 2x the window width (so we can zoom).
+		var doubleWindowWidth = (window.innerWidth * window.devicePixelRatio) * 2;
+		var isTooBig = image.dataset.sizewidth > doubleWindowWidth;
+		var imageWidth = isTooBig ? doubleWindowWidth : image.dataset.sizewidth;
+		var imageHeight = isTooBig ? (image.dataset.sizeheight * (doubleWindowWidth/imageWidth)) : image.dataset.sizeheight;
+
 		items.push({
 			src: image.dataset.imgsrc,
-			w: image.dataset.sizewidth,
-			h: image.dataset.sizeheight
+			w: imageWidth,
+			h: imageHeight
 		});
 	}
 
