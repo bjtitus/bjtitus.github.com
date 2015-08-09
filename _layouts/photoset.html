@@ -66,7 +66,7 @@
 		var doubleWindowWidth = (window.innerWidth * window.devicePixelRatio) * 2;
 		var isTooBig = image.dataset.sizewidth > doubleWindowWidth;
 		var imageWidth = isTooBig ? doubleWindowWidth : image.dataset.sizewidth;
-		var imageHeight = isTooBig ? (image.dataset.sizeheight * (doubleWindowWidth/imageWidth)) : image.dataset.sizeheight;
+		var imageHeight = isTooBig ? (image.dataset.sizeheight * (doubleWindowWidth/image.dataset.sizewidth)) : image.dataset.sizeheight;
 
 		items.push({
 			src: image.dataset.imgsrc,
