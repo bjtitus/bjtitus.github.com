@@ -33,6 +33,12 @@
 	          	lazyLoad: true,
 	          	fitImgTagToContainerWidth: true
         	});
+        	imgix.fluid({
+        		fluidClass: 'pswp__img',
+        		fitImgTagToContainerWidth: true,
+        		autoInsertCSSBestPractices: true,
+        		pixelStep: 5
+        	});
       	});
     </script>
 
@@ -69,7 +75,7 @@
 		var imageHeight = isTooBig ? (image.dataset.sizeheight * (doubleWindowWidth/image.dataset.sizewidth)) : image.dataset.sizeheight;
 
 		items.push({
-			src: image.dataset.imgsrc,
+			src: image.dataset.imgsrc + '?dpr=' + window.devicePixelRatio + 'h=' + imageHeight + '&w=' + imageWidth,
 			w: imageWidth,
 			h: imageHeight
 		});
