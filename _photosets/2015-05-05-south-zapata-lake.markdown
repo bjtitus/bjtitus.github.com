@@ -6,11 +6,11 @@ title: "South Zapata Lake Trail"
 <div>
 
 	<img
-	data-src="http://res.cloudinary.com/titus-io/image/fetch/w_{width},f_auto/http://files.titus.io/photos/ZapataTrail-4-2015/DSCF3475_HDR.jpg"
+	data-src="https://titusio.imgix.net/photos/ZapataTrail-4-2015/DSCF3475_HDR.jpg"
     data-sizes="auto"
-    data-imgsrc="http://files.titus.io/photos/ZapataTrail-4-2015/DSCF3475_HDR.jpg"
+    data-imgsrc="https://titusio.imgix.net/photos/ZapataTrail-4-2015/DSCF3475_HDR.jpg"
     data-sizewidth="4684" data-sizeheight="3003"
-    class="lazyload"
+    class="imgix-fluid"
     alt="" />
 
 	<h1 style="text-align: center;">South Zapata Lake Trail</h1>
@@ -21,28 +21,28 @@ title: "South Zapata Lake Trail"
 
 	<div class="grid-1">
 		<img
-		data-src="http://res.cloudinary.com/titus-io/image/fetch/w_{width},f_auto/http://files.titus.io/photos/ZapataTrail-4-2015/DSCF3425.jpg"
+		data-src="https://titusio.imgix.net/photos/ZapataTrail-4-2015/DSCF3425.jpg"
 	    data-sizes="auto"
-	    data-imgsrc="http://files.titus.io/photos/ZapataTrail-4-2015/DSCF3425.jpg"
+	    data-imgsrc="https://titusio.imgix.net/photos/ZapataTrail-4-2015/DSCF3425.jpg"
 	    data-sizewidth="4618" data-sizeheight="2950"
-	    class="lazyload"
+	    class="imgix-fluid"
 	    alt="" />
 	</div>
 
 	<div class="grid-2">
 		<img
-		data-src="http://res.cloudinary.com/titus-io/image/fetch/w_{width},f_auto/http://files.titus.io/photos/ZapataTrail-4-2015/DSCF3419.jpg"
+		data-src="https://titusio.imgix.net/photos/ZapataTrail-4-2015/DSCF3419.jpg"
 	    data-sizes="auto"
-	    data-imgsrc="http://files.titus.io/photos/ZapataTrail-4-2015/DSCF3419.jpg"
+	    data-imgsrc="https://titusio.imgix.net/photos/ZapataTrail-4-2015/DSCF3419.jpg"
 	    data-sizewidth="4214" data-sizeheight="2724"
-	    class="lazyload"
+	    class="imgix-fluid"
 	    alt="" />
 		<img
-		data-src="http://res.cloudinary.com/titus-io/image/fetch/w_{width},f_auto/http://files.titus.io/photos/ZapataTrail-4-2015/IMG_0509.jpg"
+		data-src="https://titusio.imgix.net/photos/ZapataTrail-4-2015/IMG_0509.jpg"
 	    data-sizes="auto"
-	    data-imgsrc="http://files.titus.io/photos/ZapataTrail-4-2015/IMG_0509.jpg"
+	    data-imgsrc="https://titusio.imgix.net/photos/ZapataTrail-4-2015/IMG_0509.jpg"
 	    data-sizewidth="3264" data-sizeheight="2448"
-	    class="lazyload"
+	    class="imgix-fluid"
 	    alt="" />
 	</div>
 
@@ -51,55 +51,55 @@ title: "South Zapata Lake Trail"
 	</div>
 
 	<img
-	data-src="http://res.cloudinary.com/titus-io/image/fetch/w_{width},f_auto/http://files.titus.io/photos/ZapataTrail-4-2015/DSCF3415.jpg"
+	data-src="https://titusio.imgix.net/photos/ZapataTrail-4-2015/DSCF3415.jpg"
     data-sizes="auto"
-    data-imgsrc="http://files.titus.io/photos/ZapataTrail-4-2015/DSCF3415.jpg"
+    data-imgsrc="https://titusio.imgix.net/photos/ZapataTrail-4-2015/DSCF3415.jpg"
     data-sizewidth="4531" data-sizeheight="3264"
-    class="lazyload"
+    class="imgix-fluid"
     alt="" />
 
 	<div class="grid-2">
 		<img
-		data-src="http://res.cloudinary.com/titus-io/image/fetch/w_{width},f_auto/http://files.titus.io/photos/ZapataTrail-4-2015/DSCF3481_HDR.jpg"
+		data-src="https://titusio.imgix.net/photos/ZapataTrail-4-2015/DSCF3481_HDR.jpg"
 	    data-sizes="auto"
-	    data-imgsrc="http://files.titus.io/photos/ZapataTrail-4-2015/DSCF3481_HDR.jpg"
+	    data-imgsrc="https://titusio.imgix.net/photos/ZapataTrail-4-2015/DSCF3481_HDR.jpg"
 	    data-sizewidth="4879" data-sizeheight="3239"
-	    class="lazyload"
+	    class="imgix-fluid"
 	    alt="" />
 	    <img
-		data-src="http://res.cloudinary.com/titus-io/image/fetch/w_{width},f_auto/http://files.titus.io/photos/ZapataTrail-4-2015/DSCF3452_HDR.jpg"
+		data-src="https://titusio.imgix.net/photos/ZapataTrail-4-2015/DSCF3452_HDR.jpg"
 	    data-sizes="auto"
-	    data-imgsrc="http://files.titus.io/photos/ZapataTrail-4-2015/DSCF3452_HDR.jpg"
+	    data-imgsrc="https://titusio.imgix.net/photos/ZapataTrail-4-2015/DSCF3452_HDR.jpg"
 	    data-sizewidth="4876" data-sizeheight="3248"
-	    class="lazyload"
+	    class="imgix-fluid"
 	    alt="" />
 	</div>
 
 	<div class="grid-2">
 	    <img
-		data-src="http://res.cloudinary.com/titus-io/image/fetch/w_{width},f_auto/http://files.titus.io/photos/ZapataTrail-4-2015/DSCF3533.jpg"
+		data-src="https://titusio.imgix.net/photos/ZapataTrail-4-2015/DSCF3533.jpg"
 	    data-sizes="auto"
-	    data-imgsrc="http://files.titus.io/photos/ZapataTrail-4-2015/DSCF3533.jpg"
+	    data-imgsrc="https://titusio.imgix.net/photos/ZapataTrail-4-2015/DSCF3533.jpg"
 	    data-sizewidth="4896" data-sizeheight="3264"
-	    class="lazyload"
+	    class="imgix-fluid"
 	    alt="" />
 	    <img
-		data-src="http://res.cloudinary.com/titus-io/image/fetch/w_{width},f_auto/http://files.titus.io/photos/ZapataTrail-4-2015/DSCF3450.jpg"
+		data-src="https://titusio.imgix.net/photos/ZapataTrail-4-2015/DSCF3450.jpg"
 	    data-sizes="auto"
-	    data-imgsrc="http://files.titus.io/photos/ZapataTrail-4-2015/DSCF3450.jpg"
+	    data-imgsrc="https://titusio.imgix.net/photos/ZapataTrail-4-2015/DSCF3450.jpg"
 	    data-sizewidth="4559" data-sizeheight="2809"
-	    class="lazyload"
+	    class="imgix-fluid"
 	    alt="" />
 	</div>
 
 
 	<div class="grid-1">
 	    <img
-		data-src="http://res.cloudinary.com/titus-io/image/fetch/w_{width},f_auto/http://files.titus.io/photos/ZapataTrail-4-2015/DSCF3477_HDR.jpg"
+		data-src="https://titusio.imgix.net/photos/ZapataTrail-4-2015/DSCF3477_HDR.jpg"
 	    data-sizes="auto"
-	    data-imgsrc="http://files.titus.io/photos/ZapataTrail-4-2015/DSCF3477_HDR.jpg"
+	    data-imgsrc="https://titusio.imgix.net/photos/ZapataTrail-4-2015/DSCF3477_HDR.jpg"
 	    data-sizewidth="4869" data-sizeheight="3226"
-	    class="lazyload"
+	    class="imgix-fluid"
 	    alt="" />
 	</div>
 
@@ -109,27 +109,27 @@ title: "South Zapata Lake Trail"
 
 	<div class="grid-2">
 	    <img
-		data-src="http://res.cloudinary.com/titus-io/image/fetch/w_{width},f_auto/http://files.titus.io/photos/ZapataTrail-4-2015/DSCF3485_HDR.jpg"
+		data-src="https://titusio.imgix.net/photos/ZapataTrail-4-2015/DSCF3485_HDR.jpg"
 	    data-sizes="auto"
-	    data-imgsrc="http://files.titus.io/photos/ZapataTrail-4-2015/DSCF3485_HDR.jpg"
+	    data-imgsrc="https://titusio.imgix.net/photos/ZapataTrail-4-2015/DSCF3485_HDR.jpg"
 	    data-sizewidth="4873" data-sizeheight="3218"
-	    class="lazyload"
+	    class="imgix-fluid"
 	    alt="" />
 	    <img
-		data-src="http://res.cloudinary.com/titus-io/image/fetch/w_{width},f_auto/http://files.titus.io/photos/ZapataTrail-4-2015/DSCF3462.jpg"
+		data-src="https://titusio.imgix.net/photos/ZapataTrail-4-2015/DSCF3462.jpg"
 	    data-sizes="auto"
 	    data-sizewidth="4896" data-sizeheight="3264"
-	    class="lazyload"
+	    class="imgix-fluid"
 	    alt="" />
 	</div>
 
 	<div class="grid-1">
 		<img
-		data-src="http://res.cloudinary.com/titus-io/image/fetch/w_{width},f_auto/http://files.titus.io/photos/ZapataTrail-4-2015/DSCF3467_HDR.jpg"
+		data-src="https://titusio.imgix.net/photos/ZapataTrail-4-2015/DSCF3467_HDR.jpg"
 	    data-sizes="auto"
-	    data-imgsrc="http://files.titus.io/photos/ZapataTrail-4-2015/DSCF3467_HDR.jpg"
+	    data-imgsrc="https://titusio.imgix.net/photos/ZapataTrail-4-2015/DSCF3467_HDR.jpg"
 	    data-sizewidth="4861" data-sizeheight="3245"
-	    class="lazyload"
+	    class="imgix-fluid"
 	    alt="" />
 	</div>
 

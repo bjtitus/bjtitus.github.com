@@ -18,12 +18,22 @@
 
     {% include photoswipe.html %}
 
-    <script src="/vendor/lazysizes/plugins/rias/ls.rias.js"></script>
-	<script src="/vendor/lazysizes/lazysizes.js"></script>
     <link rel="stylesheet" href="/vendor/photoswipe/photoswipe.css">
     <link rel="stylesheet" href="/vendor/photoswipe/default-skin/default-skin.css">
     <script src="/vendor/photoswipe/photoswipe.js"></script>
     <script src="/vendor/photoswipe/photoswipe-ui-default.js"></script>
+
+    <script src="/js/libs/imgix.min.js"></script>
+    <script>
+    	imgix.onready(function() {
+        	imgix.fluid({
+	          	updateOnResizeDown: true,
+	          	pixelStep: 5,
+	          	autoInsertCSSBestPractices: true,
+	          	lazyLoad: true
+        	});
+      	});
+    </script>
 
 	<script>
 
