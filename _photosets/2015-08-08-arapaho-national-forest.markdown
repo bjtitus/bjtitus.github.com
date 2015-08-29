@@ -29,7 +29,7 @@ title: "Winter Park - Arapaho National Forest"
     <br/>
     <br/>
     <br/>
-    <div class="wrapper" style="text-align: center;">A patch of tiny wild raspberries.</div>
+    <div class="wrapper" style="text-align: center;">A patch of tiny wild strawberries.</div>
 
     <div class="grid-1">
         <img
