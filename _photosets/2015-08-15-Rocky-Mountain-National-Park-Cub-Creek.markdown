@@ -83,7 +83,7 @@ title: "Rocky Mountain National Park - Cub Creek"
 	</div>
 
 	<div class="wrapper">
-		The areas has significant burns from the [Fern Lake Fire ](http://www.nps.gov/romo/learn/nature/fern_lake_fire.htm) in 2012.
+		The areas has significant burns from the [Fern Lake Fire](http://www.nps.gov/romo/learn/nature/fern_lake_fire.htm) in 2012.
 	</div>
 
 	<div class="grid-2">
@@ -166,7 +166,7 @@ title: "Rocky Mountain National Park - Cub Creek"
 	</div>
 
 	<div class="wrapper">
-		The Alpine Visitors Center is always a great place to visit. It is often a good place to spot wildlife lower down in the valley. There were two marmots at the top on this trip.
+		The Alpine Visitors Center is always a treat to visit, although often crowded. It can be a good place to spot wildlife lower down in the valley. There were two marmots at the top on this trip.
 	</div>
 
 	<div class="grid-1">
