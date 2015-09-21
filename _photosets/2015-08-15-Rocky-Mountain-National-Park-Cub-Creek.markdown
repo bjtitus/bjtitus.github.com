@@ -12,6 +12,7 @@ title: "Rocky Mountain National Park - Cub Creek"
 	data-sizewidth="11012" data-sizeheight="3020"
 	class="imgix-fluid"
 	alt="" />
+	<br/>
 
 	<h1 style="text-align: center;">Cub Creek - RMNP</h1>
 
@@ -60,7 +61,7 @@ title: "Rocky Mountain National Park - Cub Creek"
 	    alt="" />
 	</div>
 
-	<div class="wrapper">
+	<div class="wrapper" style="text-align: center;">
 		We hiked to Bierstadt Lake, 3.5-4 miles away but only about a mile from the road.
 	</div>
 
@@ -120,17 +121,20 @@ title: "Rocky Mountain National Park - Cub Creek"
 	    alt="" />
 	</div>
 
-	<div class="wrapper">
+	<div class="wrapper" style="text-align: center;">
 		I highly recommend planning to do this hike to return to camp about 1 hour before sunset. The views looking down on Cub Lake are fantastic.
 	</div>
+	<br/>
 
-	<img
-	data-src="https://titusio.imgix.net/photos/RMNP-8-2015/DSCF4680_HDR.jpg"
-	data-sizes="auto"
-	data-imgsrc="https://titusio.imgix.net/photos/RMNP-8-2015/DSCF4680_HDR.jpg"
-	data-sizewidth="4871" data-sizeheight="3234"
-	class="imgix-fluid"
-	alt="" />
+	<div class="grid-1">
+		<img
+		data-src="https://titusio.imgix.net/photos/RMNP-8-2015/DSCF4680_HDR.jpg"
+		data-sizes="auto"
+		data-imgsrc="https://titusio.imgix.net/photos/RMNP-8-2015/DSCF4680_HDR.jpg"
+		data-sizewidth="4871" data-sizeheight="3234"
+		class="imgix-fluid"
+		alt="" />
+	</div>
 
 	<img
 	data-src="https://titusio.imgix.net/photos/RMNP-8-2015/DSCF4723_HDR.jpg"
