@@ -72,11 +72,11 @@ title: "Rocky Mountain National Park - Cub Creek"
 	    data-sizewidth="3237" data-sizeheight="4879"
 	    class="imgix-fluid"
 	    alt="" />
-		<img
-		data-src="https://titusio.imgix.net/photos/RMNP-8-2015/DSCF4593.jpg"
+	    <img
+		data-src="https://titusio.imgix.net/photos/RMNP-8-2015/DSCF4616.jpg"
 	    data-sizes="auto"
-	    data-imgsrc="https://titusio.imgix.net/photos/RMNP-8-2015/DSCF4593.jpg"
-	    data-sizewidth="4896" data-sizeheight="3264"
+	    data-imgsrc="https://titusio.imgix.net/photos/RMNP-8-2015/DSCF4616.jpg"
+	    data-sizewidth="3264" data-sizeheight="4896"
 	    class="imgix-fluid"
 	    alt="" />
 	</div>
@@ -89,17 +89,17 @@ title: "Rocky Mountain National Park - Cub Creek"
 	    data-sizewidth="4868" data-sizeheight="3221"
 	    class="imgix-fluid"
 	    alt="" />
-		<img
-		data-src="https://titusio.imgix.net/photos/RMNP-8-2015/DSCF4616.jpg"
+	    <img
+		data-src="https://titusio.imgix.net/photos/RMNP-8-2015/DSCF4593.jpg"
 	    data-sizes="auto"
-	    data-imgsrc="https://titusio.imgix.net/photos/RMNP-8-2015/DSCF4616.jpg"
-	    data-sizewidth="3264" data-sizeheight="4896"
+	    data-imgsrc="https://titusio.imgix.net/photos/RMNP-8-2015/DSCF4593.jpg"
+	    data-sizewidth="4896" data-sizeheight="3264"
 	    class="imgix-fluid"
 	    alt="" />
 	</div>
 		
 	<div class="wrapper">
-		The lake offers a great view of Long's and of the peaks along the continental divide.
+		The lake offers a great view of Long's Peak and many of the peaks along the continental divide.
 	</div>
 
 	<img
