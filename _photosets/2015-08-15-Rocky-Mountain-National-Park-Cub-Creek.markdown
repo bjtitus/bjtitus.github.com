@@ -82,8 +82,8 @@ title: "Rocky Mountain National Park - Cub Creek"
 	    alt="" />
 	</div>
 
-	<div class="wrapper">
-		The areas has significant burns from the <a href="http://www.nps.gov/romo/learn/nature/fern_lake_fire.htm">Fern Lake Fire</a>in 2012.
+	<div class="wrapper" style="text-align:center;">
+		The area has significant burns from the <a href="http://www.nps.gov/romo/learn/nature/fern_lake_fire.htm">Fern Lake Fire</a> in 2012.
 	</div>
 
 	<div class="grid-2">
