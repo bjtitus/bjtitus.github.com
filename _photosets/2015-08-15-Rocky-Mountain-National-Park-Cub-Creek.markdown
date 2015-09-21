@@ -27,7 +27,7 @@ title: "Rocky Mountain National Park - Cub Creek"
 	</div>
 
 	<div class="wrapper">
-		Cub Creek campground an easy 2 mile hike through Moraine Park from the Cub Creek trailhead. There is only one site overlooking Moraine Park.
+		Cub Creek campground is an easy 2 mile hike through a mostly flat open valley from the Cub Creek trailhead. There is only one site overlooking Moraine Park.
 	</div>
 
 	<div class="grid-2">
@@ -48,7 +48,7 @@ title: "Rocky Mountain National Park - Cub Creek"
 	</div>	
 	
 	<div class="wrapper">
-		Permits to camp in the park cost $25 but can extend for as many days and as many people as necessary. Most sites hold a maximum of 7 people.
+		Permits to camp in the park cost $25 but can extend for as many days and as many people as requested. Most sites hold a maximum of 7 people.
 	</div>
 
 	<div class="grid-1">
@@ -80,6 +80,10 @@ title: "Rocky Mountain National Park - Cub Creek"
 	    data-sizewidth="3264" data-sizeheight="4896"
 	    class="imgix-fluid"
 	    alt="" />
+	</div>
+
+	<div class="wrapper">
+		The areas has significant burns from the [Fern Lake Fire ](http://www.nps.gov/romo/learn/nature/fern_lake_fire.htm) in 2012.
 	</div>
 
 	<div class="grid-2">
@@ -122,7 +126,7 @@ title: "Rocky Mountain National Park - Cub Creek"
 	</div>
 
 	<div class="wrapper" style="text-align: center;">
-		I highly recommend planning to do this hike to return to camp about 1 hour before sunset. The views looking down on Cub Lake are fantastic.
+		I highly recommend planning to return to camp about 1 hour before sunset. The views looking down on Cub Lake are fantastic.
 	</div>
 	<br/>
 
