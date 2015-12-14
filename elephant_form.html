@@ -1,0 +1,104 @@
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/css/foundation.min.css" type="text/css" media="screen">
+	<style type="text/css" media="screen">
+		body {
+			padding-top: 10px;
+		}
+		.red {
+			color: red;
+		}
+		.log-in-form {
+		  border: 1px solid #cacaca;
+		  padding: 1rem;
+		  border-radius: 3px;
+	  	}
+	</style>
+</head>
+<body>
+	<div class="row">
+		<div class="medium-6 medium-centered large-5 large-centered columns">
+			<div class="row column log-in-form">
+		        <h4 class="text-center">Submit your clue</h4>
+
+				<div id="empty" class="callout alert" style="display:none">
+				  <p><strong>Your clue cannot be empty</strong></p>
+				</div>
+				<div id="long" class="callout alert" style="display:none">
+				  <p><strong>Your clue must use fewer than 400 characters</strong></p><p class="help-text">Use the character counter below the field to keep track</p>
+				</div>
+				
+				<form onsubmit="return validateForm(event)" action="https://getform.org/f/4b52d677-0d21-42a1-8f57-7e5911c536c6" method="POST">
+					<textarea rows="4" placeholder="Type clue here" name="clue"></textarea>
+					<p class="help-text"><span id="total">400</span> characters left</p>
+					<button class="button expanded" type="submit">Submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+	
+		var submitButton = document.getElementsByTagName('button')[0];
+
+		var formIsValid = false;
+		
+		// Find the <textarea> element in the DOM
+		var ele = document.getElementsByTagName('textarea')[0],
+		    tot = document.getElementById('total');
+			
+		var longElement = document.getElementById("long");
+		var emptyElement = document.getElementById("empty");
+		
+		function validateForm(event) {
+			console.log("Validating");
+			if (formIsValid == false) {
+				event.preventDefault();
+				
+				console.log("Form invalid");
+				console.log(ele.value.length);
+				
+				if (ele.value.length > 400) {
+					longElement.style.display = "block";
+				}
+				
+				if (ele.value.length == 0) {
+					emptyElement.style.display = "block";
+				}
+				
+				return false;
+			}
+			console.log("Form is valid!");
+		}
+	
+		// A simple character counter for the textarea field
+		function counter() {
+
+			console.log(this.value.length);
+
+			if (this != ele) { return; }
+
+			var newValue = 400 - this.value.length;
+		    tot.innerHTML = newValue;
+			
+			if (newValue < 0 || newValue == 400) {
+				if (newValue < 0 && tot.className != 'red') {
+					tot.className = 'red';
+				}
+				formIsValid = false;
+			} else {
+				if (formIsValid == false) {
+					tot.className = '';
+					longElement.style.display = "none";
+					emptyElement.style.display = "none";
+				}
+				formIsValid = true;
+			}			
+		}
+		
+	    // Bind some event handlers to the element
+	    ele.onkeyup = counter;
+	    ele.onfocus = counter;
+	    ele.onblur  = counter;
+	</script>
+</body>
+</html>
