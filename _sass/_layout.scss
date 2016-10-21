@@ -16,7 +16,7 @@
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
-    font-family: Lato, Arial, sans-serif;
+    font-family: Helvetica, sans-serif;
 //	text-transform: uppercase;
 //	font-weight: 400;
 	letter-spacing: 0.5px;
@@ -40,7 +40,7 @@
 }
 
 .site-nav {
-    font-family: Lato, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-weight: 700;
     float: right;
     line-height: 42px;
@@ -211,10 +211,10 @@
 }
 
 .post-meta {
-    font-family: Lato;
+    font-family: Helvetica;
     font-weight: 300;
-    // font-size: $small-font-size;
-    color: $grey-color-extralight;
+    font-size: $base-font-size;
+    color: $grey-color-light;
 
     .post-list > li & {
 		float: right;
