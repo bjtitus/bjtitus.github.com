@@ -11,7 +11,10 @@ stackoverflow_username: bjtitus
 stackoverflow_userid: 72319
 
 # Build settings
-markdown: redcarpet
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "highlight", "underline", "strikethrough"]
 
