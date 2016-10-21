@@ -66,6 +66,10 @@
         &:not(:first-child) {
             margin-left: 20px;
         }
+
+        .selected {
+            border-bottom-color: $brand-color;
+        }
     }
 
     @include media-query($on-palm) {
