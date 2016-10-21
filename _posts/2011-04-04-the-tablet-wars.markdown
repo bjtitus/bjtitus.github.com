@@ -7,7 +7,7 @@ date: 2011-04-04 11:43:17 -0600
 A [Business Insider article](http://www.businessinsider.com/microsoft-had-to-make-windows-the-center-of-its-tablet-strategy-even-if-it-kills-them-2011-4) got me thinking about Microsoft's tablet strategy. Matt Rosoff asserts that Microsoft CEO Steve Ballmer had no choice but to pursue the Windows Tablet strategy because of the extreme profit margins that Microsoft receives from the Windows and Office software licenses. While this is a valid point, it is totally ridiculous to think that Ballmer had no other viable options.
 <br/>
 
-###The Mobile Landscape
+### The Mobile Landscape
 
 <script type="text/javascript">
 google.setOnLoadCallback(drawVisualization);
@@ -65,13 +65,13 @@ The mobile landscape is important in this discussion because the two clear front
 Microsoft's Windows Phone 7 seems to have come too late to the party and they're still play catch-up in what appears to be an already stratified arena. The lack of success with Windows Phone 7 makes it that much harder for Microsoft to determine which route to pursue. They can try to bring Windows down to the tablet or try bringing Windows Phone 7 up to the tablet. I would expect to see some blending of Windows Phone 7 and Windows in the near future, much as Apple is doing with Lion but to a much greater degree if Windows is to sit in the tablet middle ground.  
 <br/>
 
-###Do Tablets Cannibalize?
+### Do Tablets Cannibalize?
 
 The biggest question is whether tablet computers will actually cannibalize desktop and laptop sales. Gartner [certainly seems to think so](http://www.gartner.com/it/page.jsp?id=1570714), since their latest projections of desktop and laptop sales were reduced by 1.2% to account for this. Apple's own COO, Tim Cook, [said](http://www.macworld.com/article/157247/2011/01/cook.html) that "there is some cannibalization" but that it creates "some halo effect from Apple product to Apple product". He jokingly added: "If this is cannibalization, it feels pretty good."  
 <br/>
 [Many](http://digitaldaily.allthingsd.com/20110208/tablet-cannibalization-on-the-rise-in-2011/) [other](http://online.wsj.com/article/SB10001424052748703376504575491533125103528.html?mod=e2tw) [forecasts](http://digitaldaily.allthingsd.com/20101215/forecast-19-million-notebooks-lost-to-tablet-cannibalization-in-2011/?mod=ATD_rss) seem to show cannibalization being an obvious issue for computer manufacturers. It seems that tablets may cannibalize current PC sales but that Microsoft has no real choice. They must get into the market as soon as possible or risk losing major ground.
 <br/>
-###Even The Analysts See It
+### Even The Analysts See It
 
 Late last year, a Goldman Sachs analyst [downgraded Microsoft stock](http://www.businessinsider.com/goldman-downgrades-microsoft-msft) largely because of the mobile market.  
 <br/>
@@ -86,7 +86,7 @@ Microsoft needs to make an entrance into the tablet market as soon as possible. 
 They go on to mention the cannibalization of notebook sales by tables and are more concerned that "Windows does not yet have a presence." This simple fact is overlooked by Rosoff. Even though there is a possibility that Apple is cannibalizing its own personal computer sales, at least its own iOS devices are the cannibals. Whether or not Microsoft or Apple are more interested in a lower margin tablet market, there is one competitor who certainly is interested: Google.
 <br/>
 
-###Google's Role
+### Google's Role
 
 The release of Honeycomb shows that Google will definitely continue to push their mobile Android OS into the tablet future. Google releases nearly all of the software it produces for free. Excellent examples of this approach include Gmail, Google Docs, Google Apps, and Google Analytics. All of these applications are powerful and would have commanded fairly expensive licenses less than a decade ago. Instead, Google is distributing its software at no cost to device manufacturers in order to increase reach and encourage people to use Google's ad-supported services (since 96% of their revenue came from sales [last year](http://investing.businessweek.com/research/stocks/financials/drawFiling.asp?docKey=136-000119312511032930-303K82196D92IQSGSQ30SPLFNT&docFormat=HTM&formType=10-K#D10K_HTM_TX120214_105)).  
 <br/>
