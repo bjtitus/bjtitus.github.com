@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Hypothesis Sync
 permalink: /hypothesis_sync/
 ---
 
