@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Hypothesis Sync
 permalink: /hypothesis_sync/
+menu: false
 ---
 
 ## Hypothesis Sync

@@ -14,12 +14,12 @@
       <div class="trigger">
         <a class="page-link" href="{{ site.baseurl }}/" class="{% if page.url == site.baseurl %}selected{% endif %}">Words</a>
         {% for node in site.pages %}
-          {% if node.title %}
+          {% if node.title and node.menu != false %}
           <a class="page-link" href="{{ node.url | prepend: site.baseurl }}" class="{% if page.url == site.baseurl %}selected{% endif %}">{{ node.title }}</a>
           {% endif %}
         {% endfor %}
+      	<a class="page-link" href="micro.{{ site.baseurl }}/" class="{% if page.url == site.baseurl %}selected{% endif %}">Micro</a>
       </div>
-      <a class="page-link" href="micro.{{ site.baseurl }}/" class="{% if page.url == site.baseurl %}selected{% endif %}">Micro</a>
     </nav>
 
   </div>
