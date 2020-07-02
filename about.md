@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-I write iOS apps at [Mercury](http://mercury.io)
+I write iOS apps at [Automattic](https://automattic.com)
 
 I share stories I read on [Newsblur](http://bjtitus.newsblur.com)
 
