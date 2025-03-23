@@ -9,6 +9,9 @@ twitter_username: bjtitus
 github_username:  bjtitus
 stackoverflow_username: bjtitus
 stackoverflow_userid: 72319
+bluesky_username: b.titus.io
+mastodon_profile: https://mastodon.social/@bjtitus
+mastodon_username: bjtitus
 
 # Build settings
 markdown: kramdown
